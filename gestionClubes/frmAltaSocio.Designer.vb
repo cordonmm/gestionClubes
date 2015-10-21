@@ -2,6 +2,7 @@
 Partial Class frmAltaSocio
     Inherits MetroFramework.Forms.MetroForm
 
+
     'Form reemplaza a Dispose para limpiar la lista de componentes.
     <System.Diagnostics.DebuggerNonUserCode()> _
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
