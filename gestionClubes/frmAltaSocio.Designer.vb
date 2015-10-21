@@ -63,9 +63,18 @@ Partial Class frmAltaSocio
         Me.MetroLabel19 = New MetroFramework.Controls.MetroLabel()
         Me.MetroComboBox1 = New MetroFramework.Controls.MetroComboBox()
         Me.MetroComboBox2 = New MetroFramework.Controls.MetroComboBox()
+        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.id = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.num_socio = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.nombre = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.apellidos = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.tlf_movil = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.email = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.huella = New System.Windows.Forms.DataGridViewButtonColumn()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'PictureBox2
@@ -216,7 +225,7 @@ Partial Class frmAltaSocio
         Me.dtpFehaAlta.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
         Me.dtpFehaAlta.Location = New System.Drawing.Point(628, 92)
         Me.dtpFehaAlta.Name = "dtpFehaAlta"
-        Me.dtpFehaAlta.Size = New System.Drawing.Size(121, 20)
+        Me.dtpFehaAlta.Size = New System.Drawing.Size(182, 20)
         Me.dtpFehaAlta.TabIndex = 45
         '
         'MetroTextBox1
@@ -318,7 +327,7 @@ Partial Class frmAltaSocio
         Me.MetroTextBox6.Location = New System.Drawing.Point(506, 289)
         Me.MetroTextBox6.Multiline = True
         Me.MetroTextBox6.Name = "MetroTextBox6"
-        Me.MetroTextBox6.Size = New System.Drawing.Size(226, 139)
+        Me.MetroTextBox6.Size = New System.Drawing.Size(304, 281)
         Me.MetroTextBox6.TabIndex = 66
         Me.MetroTextBox6.Text = "Es un socio de prueba que no tiene validez en el sistema"
         '
@@ -361,9 +370,9 @@ Partial Class frmAltaSocio
         Me.MetroLabel14.AutoSize = True
         Me.MetroLabel14.Location = New System.Drawing.Point(506, 253)
         Me.MetroLabel14.Name = "MetroLabel14"
-        Me.MetroLabel14.Size = New System.Drawing.Size(144, 19)
+        Me.MetroLabel14.Size = New System.Drawing.Size(95, 19)
         Me.MetroLabel14.TabIndex = 82
-        Me.MetroLabel14.Text = "Observaciones Manolo"
+        Me.MetroLabel14.Text = "Observaciones"
         '
         'MetroLabel15
         '
@@ -425,7 +434,7 @@ Partial Class frmAltaSocio
         Me.MetroComboBox1.Items.AddRange(New Object() {"EFECTIVO", "BANCO", "TRANSFERENCIA", "OTRO"})
         Me.MetroComboBox1.Location = New System.Drawing.Point(628, 138)
         Me.MetroComboBox1.Name = "MetroComboBox1"
-        Me.MetroComboBox1.Size = New System.Drawing.Size(121, 29)
+        Me.MetroComboBox1.Size = New System.Drawing.Size(182, 29)
         Me.MetroComboBox1.TabIndex = 89
         '
         'MetroComboBox2
@@ -435,14 +444,62 @@ Partial Class frmAltaSocio
         Me.MetroComboBox2.Items.AddRange(New Object() {"AUTORIZADO", "NO AUTORIZADO"})
         Me.MetroComboBox2.Location = New System.Drawing.Point(628, 185)
         Me.MetroComboBox2.Name = "MetroComboBox2"
-        Me.MetroComboBox2.Size = New System.Drawing.Size(121, 29)
+        Me.MetroComboBox2.Size = New System.Drawing.Size(182, 29)
         Me.MetroComboBox2.TabIndex = 90
+        '
+        'DataGridView1
+        '
+        Me.DataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
+        Me.DataGridView1.BackgroundColor = System.Drawing.Color.Gray
+        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.id, Me.num_socio, Me.nombre, Me.apellidos, Me.tlf_movil, Me.email, Me.huella})
+        Me.DataGridView1.Location = New System.Drawing.Point(48, 612)
+        Me.DataGridView1.Name = "DataGridView1"
+        Me.DataGridView1.Size = New System.Drawing.Size(1177, 148)
+        Me.DataGridView1.TabIndex = 91
+        '
+        'id
+        '
+        Me.id.HeaderText = "Id"
+        Me.id.Name = "id"
+        '
+        'num_socio
+        '
+        Me.num_socio.HeaderText = "Núm. Socio"
+        Me.num_socio.Name = "num_socio"
+        '
+        'nombre
+        '
+        Me.nombre.HeaderText = "Nombre"
+        Me.nombre.Name = "nombre"
+        '
+        'apellidos
+        '
+        Me.apellidos.HeaderText = "Apellidos"
+        Me.apellidos.Name = "apellidos"
+        '
+        'tlf_movil
+        '
+        Me.tlf_movil.HeaderText = "Teléfono Móvil"
+        Me.tlf_movil.Name = "tlf_movil"
+        '
+        'email
+        '
+        Me.email.HeaderText = "E-mail"
+        Me.email.Name = "email"
+        '
+        'huella
+        '
+        Me.huella.HeaderText = "Tomar Huella"
+        Me.huella.Name = "huella"
+        Me.huella.Text = ""
         '
         'frmAltaSocio
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1350, 594)
+        Me.ClientSize = New System.Drawing.Size(1368, 903)
+        Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.MetroComboBox2)
         Me.Controls.Add(Me.MetroComboBox1)
         Me.Controls.Add(Me.MetroLabel19)
@@ -478,6 +535,7 @@ Partial Class frmAltaSocio
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -523,4 +581,12 @@ Partial Class frmAltaSocio
     Friend WithEvents MetroLabel19 As MetroFramework.Controls.MetroLabel
     Friend WithEvents MetroComboBox1 As MetroFramework.Controls.MetroComboBox
     Friend WithEvents MetroComboBox2 As MetroFramework.Controls.MetroComboBox
+    Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents id As DataGridViewTextBoxColumn
+    Friend WithEvents num_socio As DataGridViewTextBoxColumn
+    Friend WithEvents nombre As DataGridViewTextBoxColumn
+    Friend WithEvents apellidos As DataGridViewTextBoxColumn
+    Friend WithEvents tlf_movil As DataGridViewTextBoxColumn
+    Friend WithEvents email As DataGridViewTextBoxColumn
+    Friend WithEvents huella As DataGridViewButtonColumn
 End Class
