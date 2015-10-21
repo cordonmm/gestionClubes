@@ -63,18 +63,11 @@ Partial Class frmAltaSocio
         Me.MetroLabel19 = New MetroFramework.Controls.MetroLabel()
         Me.MetroComboBox1 = New MetroFramework.Controls.MetroComboBox()
         Me.MetroComboBox2 = New MetroFramework.Controls.MetroComboBox()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.id = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.num_socio = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.nombre = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.apellidos = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.tlf_movil = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.email = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.huella = New System.Windows.Forms.DataGridViewButtonColumn()
+        Me.MetroDateTime1 = New MetroFramework.Controls.MetroDateTime()
+        Me.MetroComboBox3 = New MetroFramework.Controls.MetroComboBox()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'PictureBox2
@@ -120,43 +113,153 @@ Partial Class frmAltaSocio
         '
         'MetroTextBox14
         '
+        '
+        '
+        '
+        Me.MetroTextBox14.CustomButton.Image = Nothing
+        Me.MetroTextBox14.CustomButton.Location = New System.Drawing.Point(229, 1)
+        Me.MetroTextBox14.CustomButton.Name = ""
+        Me.MetroTextBox14.CustomButton.Size = New System.Drawing.Size(21, 21)
+        Me.MetroTextBox14.CustomButton.Style = MetroFramework.MetroColorStyle.Blue
+        Me.MetroTextBox14.CustomButton.TabIndex = 1
+        Me.MetroTextBox14.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light
+        Me.MetroTextBox14.CustomButton.UseSelectable = True
+        Me.MetroTextBox14.CustomButton.Visible = False
+        Me.MetroTextBox14.Lines = New String() {"Sevilla"}
         Me.MetroTextBox14.Location = New System.Drawing.Point(118, 188)
+        Me.MetroTextBox14.MaxLength = 32767
         Me.MetroTextBox14.Name = "MetroTextBox14"
+        Me.MetroTextBox14.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.MetroTextBox14.ScrollBars = System.Windows.Forms.ScrollBars.None
+        Me.MetroTextBox14.SelectedText = ""
+        Me.MetroTextBox14.SelectionLength = 0
+        Me.MetroTextBox14.SelectionStart = 0
         Me.MetroTextBox14.Size = New System.Drawing.Size(251, 23)
         Me.MetroTextBox14.TabIndex = 81
         Me.MetroTextBox14.Text = "Sevilla"
+        Me.MetroTextBox14.UseSelectable = True
+        Me.MetroTextBox14.WaterMarkColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer))
+        Me.MetroTextBox14.WaterMarkFont = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel)
         '
         'MetroTextBox13
         '
+        '
+        '
+        '
+        Me.MetroTextBox13.CustomButton.Image = Nothing
+        Me.MetroTextBox13.CustomButton.Location = New System.Drawing.Point(229, 1)
+        Me.MetroTextBox13.CustomButton.Name = ""
+        Me.MetroTextBox13.CustomButton.Size = New System.Drawing.Size(21, 21)
+        Me.MetroTextBox13.CustomButton.Style = MetroFramework.MetroColorStyle.Blue
+        Me.MetroTextBox13.CustomButton.TabIndex = 1
+        Me.MetroTextBox13.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light
+        Me.MetroTextBox13.CustomButton.UseSelectable = True
+        Me.MetroTextBox13.CustomButton.Visible = False
+        Me.MetroTextBox13.Lines = New String() {"Dos Hermanas"}
         Me.MetroTextBox13.Location = New System.Drawing.Point(118, 150)
+        Me.MetroTextBox13.MaxLength = 32767
         Me.MetroTextBox13.Name = "MetroTextBox13"
+        Me.MetroTextBox13.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.MetroTextBox13.ScrollBars = System.Windows.Forms.ScrollBars.None
+        Me.MetroTextBox13.SelectedText = ""
+        Me.MetroTextBox13.SelectionLength = 0
+        Me.MetroTextBox13.SelectionStart = 0
         Me.MetroTextBox13.Size = New System.Drawing.Size(251, 23)
         Me.MetroTextBox13.TabIndex = 80
         Me.MetroTextBox13.Text = "Dos Hermanas"
+        Me.MetroTextBox13.UseSelectable = True
+        Me.MetroTextBox13.WaterMarkColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer))
+        Me.MetroTextBox13.WaterMarkFont = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel)
         '
         'MetroTextBox12
         '
+        '
+        '
+        '
+        Me.MetroTextBox12.CustomButton.Image = Nothing
+        Me.MetroTextBox12.CustomButton.Location = New System.Drawing.Point(61, 1)
+        Me.MetroTextBox12.CustomButton.Name = ""
+        Me.MetroTextBox12.CustomButton.Size = New System.Drawing.Size(21, 21)
+        Me.MetroTextBox12.CustomButton.Style = MetroFramework.MetroColorStyle.Blue
+        Me.MetroTextBox12.CustomButton.TabIndex = 1
+        Me.MetroTextBox12.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light
+        Me.MetroTextBox12.CustomButton.UseSelectable = True
+        Me.MetroTextBox12.CustomButton.Visible = False
+        Me.MetroTextBox12.Lines = New String() {"41701"}
         Me.MetroTextBox12.Location = New System.Drawing.Point(118, 112)
+        Me.MetroTextBox12.MaxLength = 32767
         Me.MetroTextBox12.Name = "MetroTextBox12"
+        Me.MetroTextBox12.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.MetroTextBox12.ScrollBars = System.Windows.Forms.ScrollBars.None
+        Me.MetroTextBox12.SelectedText = ""
+        Me.MetroTextBox12.SelectionLength = 0
+        Me.MetroTextBox12.SelectionStart = 0
         Me.MetroTextBox12.Size = New System.Drawing.Size(83, 23)
         Me.MetroTextBox12.TabIndex = 79
         Me.MetroTextBox12.Text = "41701"
+        Me.MetroTextBox12.UseSelectable = True
+        Me.MetroTextBox12.WaterMarkColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer))
+        Me.MetroTextBox12.WaterMarkFont = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel)
         '
         'MetroTextBox11
         '
+        '
+        '
+        '
+        Me.MetroTextBox11.CustomButton.Image = Nothing
+        Me.MetroTextBox11.CustomButton.Location = New System.Drawing.Point(61, 1)
+        Me.MetroTextBox11.CustomButton.Name = ""
+        Me.MetroTextBox11.CustomButton.Size = New System.Drawing.Size(21, 21)
+        Me.MetroTextBox11.CustomButton.Style = MetroFramework.MetroColorStyle.Blue
+        Me.MetroTextBox11.CustomButton.TabIndex = 1
+        Me.MetroTextBox11.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light
+        Me.MetroTextBox11.CustomButton.UseSelectable = True
+        Me.MetroTextBox11.CustomButton.Visible = False
+        Me.MetroTextBox11.Lines = New String() {"2º B"}
         Me.MetroTextBox11.Location = New System.Drawing.Point(286, 74)
+        Me.MetroTextBox11.MaxLength = 32767
         Me.MetroTextBox11.Name = "MetroTextBox11"
+        Me.MetroTextBox11.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.MetroTextBox11.ScrollBars = System.Windows.Forms.ScrollBars.None
+        Me.MetroTextBox11.SelectedText = ""
+        Me.MetroTextBox11.SelectionLength = 0
+        Me.MetroTextBox11.SelectionStart = 0
         Me.MetroTextBox11.Size = New System.Drawing.Size(83, 23)
         Me.MetroTextBox11.TabIndex = 78
         Me.MetroTextBox11.Text = "2º B"
+        Me.MetroTextBox11.UseSelectable = True
+        Me.MetroTextBox11.WaterMarkColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer))
+        Me.MetroTextBox11.WaterMarkFont = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel)
         '
         'MetroTextBox10
         '
+        '
+        '
+        '
+        Me.MetroTextBox10.CustomButton.Image = Nothing
+        Me.MetroTextBox10.CustomButton.Location = New System.Drawing.Point(61, 1)
+        Me.MetroTextBox10.CustomButton.Name = ""
+        Me.MetroTextBox10.CustomButton.Size = New System.Drawing.Size(21, 21)
+        Me.MetroTextBox10.CustomButton.Style = MetroFramework.MetroColorStyle.Blue
+        Me.MetroTextBox10.CustomButton.TabIndex = 1
+        Me.MetroTextBox10.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light
+        Me.MetroTextBox10.CustomButton.UseSelectable = True
+        Me.MetroTextBox10.CustomButton.Visible = False
+        Me.MetroTextBox10.Lines = New String() {"2"}
         Me.MetroTextBox10.Location = New System.Drawing.Point(118, 74)
+        Me.MetroTextBox10.MaxLength = 32767
         Me.MetroTextBox10.Name = "MetroTextBox10"
+        Me.MetroTextBox10.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.MetroTextBox10.ScrollBars = System.Windows.Forms.ScrollBars.None
+        Me.MetroTextBox10.SelectedText = ""
+        Me.MetroTextBox10.SelectionLength = 0
+        Me.MetroTextBox10.SelectionStart = 0
         Me.MetroTextBox10.Size = New System.Drawing.Size(83, 23)
         Me.MetroTextBox10.TabIndex = 77
         Me.MetroTextBox10.Text = "2"
+        Me.MetroTextBox10.UseSelectable = True
+        Me.MetroTextBox10.WaterMarkColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer))
+        Me.MetroTextBox10.WaterMarkFont = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel)
         '
         'MetroLabel13
         '
@@ -169,11 +272,33 @@ Partial Class frmAltaSocio
         '
         'MetroTextBox8
         '
+        '
+        '
+        '
+        Me.MetroTextBox8.CustomButton.Image = Nothing
+        Me.MetroTextBox8.CustomButton.Location = New System.Drawing.Point(229, 1)
+        Me.MetroTextBox8.CustomButton.Name = ""
+        Me.MetroTextBox8.CustomButton.Size = New System.Drawing.Size(21, 21)
+        Me.MetroTextBox8.CustomButton.Style = MetroFramework.MetroColorStyle.Blue
+        Me.MetroTextBox8.CustomButton.TabIndex = 1
+        Me.MetroTextBox8.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light
+        Me.MetroTextBox8.CustomButton.UseSelectable = True
+        Me.MetroTextBox8.CustomButton.Visible = False
+        Me.MetroTextBox8.Lines = New String() {"Alqueria"}
         Me.MetroTextBox8.Location = New System.Drawing.Point(118, 36)
+        Me.MetroTextBox8.MaxLength = 32767
         Me.MetroTextBox8.Name = "MetroTextBox8"
+        Me.MetroTextBox8.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.MetroTextBox8.ScrollBars = System.Windows.Forms.ScrollBars.None
+        Me.MetroTextBox8.SelectedText = ""
+        Me.MetroTextBox8.SelectionLength = 0
+        Me.MetroTextBox8.SelectionStart = 0
         Me.MetroTextBox8.Size = New System.Drawing.Size(251, 23)
         Me.MetroTextBox8.TabIndex = 70
         Me.MetroTextBox8.Text = "Alqueria"
+        Me.MetroTextBox8.UseSelectable = True
+        Me.MetroTextBox8.WaterMarkColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer))
+        Me.MetroTextBox8.WaterMarkFont = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel)
         '
         'MetroLabel12
         '
@@ -225,16 +350,38 @@ Partial Class frmAltaSocio
         Me.dtpFehaAlta.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
         Me.dtpFehaAlta.Location = New System.Drawing.Point(628, 92)
         Me.dtpFehaAlta.Name = "dtpFehaAlta"
-        Me.dtpFehaAlta.Size = New System.Drawing.Size(182, 20)
+        Me.dtpFehaAlta.Size = New System.Drawing.Size(121, 20)
         Me.dtpFehaAlta.TabIndex = 45
         '
         'MetroTextBox1
         '
+        '
+        '
+        '
+        Me.MetroTextBox1.CustomButton.Image = Nothing
+        Me.MetroTextBox1.CustomButton.Location = New System.Drawing.Point(229, 1)
+        Me.MetroTextBox1.CustomButton.Name = ""
+        Me.MetroTextBox1.CustomButton.Size = New System.Drawing.Size(21, 21)
+        Me.MetroTextBox1.CustomButton.Style = MetroFramework.MetroColorStyle.Blue
+        Me.MetroTextBox1.CustomButton.TabIndex = 1
+        Me.MetroTextBox1.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light
+        Me.MetroTextBox1.CustomButton.UseSelectable = True
+        Me.MetroTextBox1.CustomButton.Visible = False
+        Me.MetroTextBox1.Lines = New String() {"Juan"}
         Me.MetroTextBox1.Location = New System.Drawing.Point(170, 129)
+        Me.MetroTextBox1.MaxLength = 32767
         Me.MetroTextBox1.Name = "MetroTextBox1"
+        Me.MetroTextBox1.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.MetroTextBox1.ScrollBars = System.Windows.Forms.ScrollBars.None
+        Me.MetroTextBox1.SelectedText = ""
+        Me.MetroTextBox1.SelectionLength = 0
+        Me.MetroTextBox1.SelectionStart = 0
         Me.MetroTextBox1.Size = New System.Drawing.Size(251, 23)
         Me.MetroTextBox1.TabIndex = 54
         Me.MetroTextBox1.Text = "Juan"
+        Me.MetroTextBox1.UseSelectable = True
+        Me.MetroTextBox1.WaterMarkColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer))
+        Me.MetroTextBox1.WaterMarkFont = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel)
         '
         'MetroButton1
         '
@@ -243,6 +390,7 @@ Partial Class frmAltaSocio
         Me.MetroButton1.Size = New System.Drawing.Size(84, 35)
         Me.MetroButton1.TabIndex = 55
         Me.MetroButton1.Text = "Tomar Huella"
+        Me.MetroButton1.UseSelectable = True
         '
         'MetroLabel1
         '
@@ -291,45 +439,155 @@ Partial Class frmAltaSocio
         '
         'MetroTextBox2
         '
+        '
+        '
+        '
+        Me.MetroTextBox2.CustomButton.Image = Nothing
+        Me.MetroTextBox2.CustomButton.Location = New System.Drawing.Point(229, 1)
+        Me.MetroTextBox2.CustomButton.Name = ""
+        Me.MetroTextBox2.CustomButton.Size = New System.Drawing.Size(21, 21)
+        Me.MetroTextBox2.CustomButton.Style = MetroFramework.MetroColorStyle.Blue
+        Me.MetroTextBox2.CustomButton.TabIndex = 1
+        Me.MetroTextBox2.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light
+        Me.MetroTextBox2.CustomButton.UseSelectable = True
+        Me.MetroTextBox2.CustomButton.Visible = False
+        Me.MetroTextBox2.Lines = New String() {"Perez Lopez"}
         Me.MetroTextBox2.Location = New System.Drawing.Point(170, 169)
+        Me.MetroTextBox2.MaxLength = 32767
         Me.MetroTextBox2.Name = "MetroTextBox2"
+        Me.MetroTextBox2.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.MetroTextBox2.ScrollBars = System.Windows.Forms.ScrollBars.None
+        Me.MetroTextBox2.SelectedText = ""
+        Me.MetroTextBox2.SelectionLength = 0
+        Me.MetroTextBox2.SelectionStart = 0
         Me.MetroTextBox2.Size = New System.Drawing.Size(251, 23)
         Me.MetroTextBox2.TabIndex = 61
         Me.MetroTextBox2.Text = "Perez Lopez"
+        Me.MetroTextBox2.UseSelectable = True
+        Me.MetroTextBox2.WaterMarkColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer))
+        Me.MetroTextBox2.WaterMarkFont = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel)
         '
         'MetroTextBox3
         '
+        '
+        '
+        '
+        Me.MetroTextBox3.CustomButton.Image = Nothing
+        Me.MetroTextBox3.CustomButton.Location = New System.Drawing.Point(229, 1)
+        Me.MetroTextBox3.CustomButton.Name = ""
+        Me.MetroTextBox3.CustomButton.Size = New System.Drawing.Size(21, 21)
+        Me.MetroTextBox3.CustomButton.Style = MetroFramework.MetroColorStyle.Blue
+        Me.MetroTextBox3.CustomButton.TabIndex = 1
+        Me.MetroTextBox3.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light
+        Me.MetroTextBox3.CustomButton.UseSelectable = True
+        Me.MetroTextBox3.CustomButton.Visible = False
+        Me.MetroTextBox3.Lines = New String() {"juan@clubfernandovarela.es"}
         Me.MetroTextBox3.Location = New System.Drawing.Point(170, 209)
+        Me.MetroTextBox3.MaxLength = 32767
         Me.MetroTextBox3.Name = "MetroTextBox3"
+        Me.MetroTextBox3.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.MetroTextBox3.ScrollBars = System.Windows.Forms.ScrollBars.None
+        Me.MetroTextBox3.SelectedText = ""
+        Me.MetroTextBox3.SelectionLength = 0
+        Me.MetroTextBox3.SelectionStart = 0
         Me.MetroTextBox3.Size = New System.Drawing.Size(251, 23)
         Me.MetroTextBox3.TabIndex = 62
         Me.MetroTextBox3.Text = "juan@clubfernandovarela.es"
+        Me.MetroTextBox3.UseSelectable = True
+        Me.MetroTextBox3.WaterMarkColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer))
+        Me.MetroTextBox3.WaterMarkFont = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel)
         '
         'MetroTextBox5
         '
+        '
+        '
+        '
+        Me.MetroTextBox5.CustomButton.Image = Nothing
+        Me.MetroTextBox5.CustomButton.Location = New System.Drawing.Point(229, 1)
+        Me.MetroTextBox5.CustomButton.Name = ""
+        Me.MetroTextBox5.CustomButton.Size = New System.Drawing.Size(21, 21)
+        Me.MetroTextBox5.CustomButton.Style = MetroFramework.MetroColorStyle.Blue
+        Me.MetroTextBox5.CustomButton.TabIndex = 1
+        Me.MetroTextBox5.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light
+        Me.MetroTextBox5.CustomButton.UseSelectable = True
+        Me.MetroTextBox5.CustomButton.Visible = False
+        Me.MetroTextBox5.Lines = New String() {"666666666"}
         Me.MetroTextBox5.Location = New System.Drawing.Point(170, 249)
+        Me.MetroTextBox5.MaxLength = 32767
         Me.MetroTextBox5.Name = "MetroTextBox5"
+        Me.MetroTextBox5.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.MetroTextBox5.ScrollBars = System.Windows.Forms.ScrollBars.None
+        Me.MetroTextBox5.SelectedText = ""
+        Me.MetroTextBox5.SelectionLength = 0
+        Me.MetroTextBox5.SelectionStart = 0
         Me.MetroTextBox5.Size = New System.Drawing.Size(251, 23)
         Me.MetroTextBox5.TabIndex = 63
         Me.MetroTextBox5.Text = "666666666"
+        Me.MetroTextBox5.UseSelectable = True
+        Me.MetroTextBox5.WaterMarkColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer))
+        Me.MetroTextBox5.WaterMarkFont = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel)
         '
         'MetroTextBox7
         '
+        '
+        '
+        '
+        Me.MetroTextBox7.CustomButton.Image = Nothing
+        Me.MetroTextBox7.CustomButton.Location = New System.Drawing.Point(229, 1)
+        Me.MetroTextBox7.CustomButton.Name = ""
+        Me.MetroTextBox7.CustomButton.Size = New System.Drawing.Size(21, 21)
+        Me.MetroTextBox7.CustomButton.Style = MetroFramework.MetroColorStyle.Blue
+        Me.MetroTextBox7.CustomButton.TabIndex = 1
+        Me.MetroTextBox7.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light
+        Me.MetroTextBox7.CustomButton.UseSelectable = True
+        Me.MetroTextBox7.CustomButton.Visible = False
+        Me.MetroTextBox7.Lines = New String() {"999999999"}
         Me.MetroTextBox7.Location = New System.Drawing.Point(170, 289)
+        Me.MetroTextBox7.MaxLength = 32767
         Me.MetroTextBox7.Name = "MetroTextBox7"
+        Me.MetroTextBox7.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.MetroTextBox7.ScrollBars = System.Windows.Forms.ScrollBars.None
+        Me.MetroTextBox7.SelectedText = ""
+        Me.MetroTextBox7.SelectionLength = 0
+        Me.MetroTextBox7.SelectionStart = 0
         Me.MetroTextBox7.Size = New System.Drawing.Size(251, 23)
         Me.MetroTextBox7.TabIndex = 64
         Me.MetroTextBox7.Text = "999999999"
+        Me.MetroTextBox7.UseSelectable = True
+        Me.MetroTextBox7.WaterMarkColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer))
+        Me.MetroTextBox7.WaterMarkFont = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel)
         '
         'MetroTextBox6
         '
+        '
+        '
+        '
+        Me.MetroTextBox6.CustomButton.Image = Nothing
+        Me.MetroTextBox6.CustomButton.Location = New System.Drawing.Point(88, 1)
+        Me.MetroTextBox6.CustomButton.Name = ""
+        Me.MetroTextBox6.CustomButton.Size = New System.Drawing.Size(137, 137)
+        Me.MetroTextBox6.CustomButton.Style = MetroFramework.MetroColorStyle.Blue
+        Me.MetroTextBox6.CustomButton.TabIndex = 1
+        Me.MetroTextBox6.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light
+        Me.MetroTextBox6.CustomButton.UseSelectable = True
+        Me.MetroTextBox6.CustomButton.Visible = False
         Me.MetroTextBox6.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.MetroTextBox6.Lines = New String() {"Es un socio de prueba que no tiene validez en el sistema"}
         Me.MetroTextBox6.Location = New System.Drawing.Point(506, 289)
+        Me.MetroTextBox6.MaxLength = 32767
         Me.MetroTextBox6.Multiline = True
         Me.MetroTextBox6.Name = "MetroTextBox6"
-        Me.MetroTextBox6.Size = New System.Drawing.Size(304, 281)
+        Me.MetroTextBox6.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.MetroTextBox6.ScrollBars = System.Windows.Forms.ScrollBars.None
+        Me.MetroTextBox6.SelectedText = ""
+        Me.MetroTextBox6.SelectionLength = 0
+        Me.MetroTextBox6.SelectionStart = 0
+        Me.MetroTextBox6.Size = New System.Drawing.Size(226, 139)
         Me.MetroTextBox6.TabIndex = 66
         Me.MetroTextBox6.Text = "Es un socio de prueba que no tiene validez en el sistema"
+        Me.MetroTextBox6.UseSelectable = True
+        Me.MetroTextBox6.WaterMarkColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer))
+        Me.MetroTextBox6.WaterMarkFont = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel)
         '
         'MetroLabel7
         '
@@ -351,28 +609,72 @@ Partial Class frmAltaSocio
         '
         'MetroTextBox4
         '
+        '
+        '
+        '
+        Me.MetroTextBox4.CustomButton.Image = Nothing
+        Me.MetroTextBox4.CustomButton.Location = New System.Drawing.Point(44, 1)
+        Me.MetroTextBox4.CustomButton.Name = ""
+        Me.MetroTextBox4.CustomButton.Size = New System.Drawing.Size(21, 21)
+        Me.MetroTextBox4.CustomButton.Style = MetroFramework.MetroColorStyle.Blue
+        Me.MetroTextBox4.CustomButton.TabIndex = 1
+        Me.MetroTextBox4.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light
+        Me.MetroTextBox4.CustomButton.UseSelectable = True
+        Me.MetroTextBox4.CustomButton.Visible = False
+        Me.MetroTextBox4.Lines = New String() {"120"}
         Me.MetroTextBox4.Location = New System.Drawing.Point(170, 97)
+        Me.MetroTextBox4.MaxLength = 32767
         Me.MetroTextBox4.Name = "MetroTextBox4"
+        Me.MetroTextBox4.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.MetroTextBox4.ScrollBars = System.Windows.Forms.ScrollBars.None
+        Me.MetroTextBox4.SelectedText = ""
+        Me.MetroTextBox4.SelectionLength = 0
+        Me.MetroTextBox4.SelectionStart = 0
         Me.MetroTextBox4.Size = New System.Drawing.Size(66, 23)
         Me.MetroTextBox4.TabIndex = 69
         Me.MetroTextBox4.Text = "120"
+        Me.MetroTextBox4.UseSelectable = True
+        Me.MetroTextBox4.WaterMarkColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer))
+        Me.MetroTextBox4.WaterMarkFont = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel)
         '
         'MetroTextBox9
         '
+        '
+        '
+        '
+        Me.MetroTextBox9.CustomButton.Image = Nothing
+        Me.MetroTextBox9.CustomButton.Location = New System.Drawing.Point(120, 1)
+        Me.MetroTextBox9.CustomButton.Name = ""
+        Me.MetroTextBox9.CustomButton.Size = New System.Drawing.Size(21, 21)
+        Me.MetroTextBox9.CustomButton.Style = MetroFramework.MetroColorStyle.Blue
+        Me.MetroTextBox9.CustomButton.TabIndex = 1
+        Me.MetroTextBox9.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light
+        Me.MetroTextBox9.CustomButton.UseSelectable = True
+        Me.MetroTextBox9.CustomButton.Visible = False
+        Me.MetroTextBox9.Lines = New String() {"12345678A"}
         Me.MetroTextBox9.Location = New System.Drawing.Point(279, 95)
+        Me.MetroTextBox9.MaxLength = 32767
         Me.MetroTextBox9.Name = "MetroTextBox9"
+        Me.MetroTextBox9.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.MetroTextBox9.ScrollBars = System.Windows.Forms.ScrollBars.None
+        Me.MetroTextBox9.SelectedText = ""
+        Me.MetroTextBox9.SelectionLength = 0
+        Me.MetroTextBox9.SelectionStart = 0
         Me.MetroTextBox9.Size = New System.Drawing.Size(142, 23)
         Me.MetroTextBox9.TabIndex = 71
         Me.MetroTextBox9.Text = "12345678A"
+        Me.MetroTextBox9.UseSelectable = True
+        Me.MetroTextBox9.WaterMarkColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer))
+        Me.MetroTextBox9.WaterMarkFont = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel)
         '
         'MetroLabel14
         '
         Me.MetroLabel14.AutoSize = True
         Me.MetroLabel14.Location = New System.Drawing.Point(506, 253)
         Me.MetroLabel14.Name = "MetroLabel14"
-        Me.MetroLabel14.Size = New System.Drawing.Size(95, 19)
+        Me.MetroLabel14.Size = New System.Drawing.Size(144, 19)
         Me.MetroLabel14.TabIndex = 82
-        Me.MetroLabel14.Text = "Observaciones"
+        Me.MetroLabel14.Text = "Observaciones Manolo"
         '
         'MetroLabel15
         '
@@ -390,6 +692,7 @@ Partial Class frmAltaSocio
         Me.MetroButton2.Size = New System.Drawing.Size(84, 35)
         Me.MetroButton2.TabIndex = 84
         Me.MetroButton2.Text = "Capturar"
+        Me.MetroButton2.UseSelectable = True
         '
         'MetroLabel16
         '
@@ -434,8 +737,9 @@ Partial Class frmAltaSocio
         Me.MetroComboBox1.Items.AddRange(New Object() {"EFECTIVO", "BANCO", "TRANSFERENCIA", "OTRO"})
         Me.MetroComboBox1.Location = New System.Drawing.Point(628, 138)
         Me.MetroComboBox1.Name = "MetroComboBox1"
-        Me.MetroComboBox1.Size = New System.Drawing.Size(182, 29)
+        Me.MetroComboBox1.Size = New System.Drawing.Size(121, 29)
         Me.MetroComboBox1.TabIndex = 89
+        Me.MetroComboBox1.UseSelectable = True
         '
         'MetroComboBox2
         '
@@ -444,62 +748,36 @@ Partial Class frmAltaSocio
         Me.MetroComboBox2.Items.AddRange(New Object() {"AUTORIZADO", "NO AUTORIZADO"})
         Me.MetroComboBox2.Location = New System.Drawing.Point(628, 185)
         Me.MetroComboBox2.Name = "MetroComboBox2"
-        Me.MetroComboBox2.Size = New System.Drawing.Size(182, 29)
+        Me.MetroComboBox2.Size = New System.Drawing.Size(121, 29)
         Me.MetroComboBox2.TabIndex = 90
+        Me.MetroComboBox2.UseSelectable = True
         '
-        'DataGridView1
+        'MetroDateTime1
         '
-        Me.DataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
-        Me.DataGridView1.BackgroundColor = System.Drawing.Color.Gray
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.id, Me.num_socio, Me.nombre, Me.apellidos, Me.tlf_movil, Me.email, Me.huella})
-        Me.DataGridView1.Location = New System.Drawing.Point(48, 612)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(1177, 148)
-        Me.DataGridView1.TabIndex = 91
+        Me.MetroDateTime1.Location = New System.Drawing.Point(549, 50)
+        Me.MetroDateTime1.MinimumSize = New System.Drawing.Size(0, 29)
+        Me.MetroDateTime1.Name = "MetroDateTime1"
+        Me.MetroDateTime1.Size = New System.Drawing.Size(200, 29)
+        Me.MetroDateTime1.TabIndex = 91
         '
-        'id
+        'MetroComboBox3
         '
-        Me.id.HeaderText = "Id"
-        Me.id.Name = "id"
-        '
-        'num_socio
-        '
-        Me.num_socio.HeaderText = "Núm. Socio"
-        Me.num_socio.Name = "num_socio"
-        '
-        'nombre
-        '
-        Me.nombre.HeaderText = "Nombre"
-        Me.nombre.Name = "nombre"
-        '
-        'apellidos
-        '
-        Me.apellidos.HeaderText = "Apellidos"
-        Me.apellidos.Name = "apellidos"
-        '
-        'tlf_movil
-        '
-        Me.tlf_movil.HeaderText = "Teléfono Móvil"
-        Me.tlf_movil.Name = "tlf_movil"
-        '
-        'email
-        '
-        Me.email.HeaderText = "E-mail"
-        Me.email.Name = "email"
-        '
-        'huella
-        '
-        Me.huella.HeaderText = "Tomar Huella"
-        Me.huella.Name = "huella"
-        Me.huella.Text = ""
+        Me.MetroComboBox3.FormattingEnabled = True
+        Me.MetroComboBox3.ItemHeight = 23
+        Me.MetroComboBox3.Items.AddRange(New Object() {"ddsdsa", "asd", "da", "sadsa"})
+        Me.MetroComboBox3.Location = New System.Drawing.Point(364, 27)
+        Me.MetroComboBox3.Name = "MetroComboBox3"
+        Me.MetroComboBox3.Size = New System.Drawing.Size(121, 29)
+        Me.MetroComboBox3.TabIndex = 92
+        Me.MetroComboBox3.UseSelectable = True
         '
         'frmAltaSocio
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1368, 903)
-        Me.Controls.Add(Me.DataGridView1)
+        Me.ClientSize = New System.Drawing.Size(1350, 594)
+        Me.Controls.Add(Me.MetroComboBox3)
+        Me.Controls.Add(Me.MetroDateTime1)
         Me.Controls.Add(Me.MetroComboBox2)
         Me.Controls.Add(Me.MetroComboBox1)
         Me.Controls.Add(Me.MetroLabel19)
@@ -535,7 +813,6 @@ Partial Class frmAltaSocio
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -581,12 +858,6 @@ Partial Class frmAltaSocio
     Friend WithEvents MetroLabel19 As MetroFramework.Controls.MetroLabel
     Friend WithEvents MetroComboBox1 As MetroFramework.Controls.MetroComboBox
     Friend WithEvents MetroComboBox2 As MetroFramework.Controls.MetroComboBox
-    Friend WithEvents DataGridView1 As DataGridView
-    Friend WithEvents id As DataGridViewTextBoxColumn
-    Friend WithEvents num_socio As DataGridViewTextBoxColumn
-    Friend WithEvents nombre As DataGridViewTextBoxColumn
-    Friend WithEvents apellidos As DataGridViewTextBoxColumn
-    Friend WithEvents tlf_movil As DataGridViewTextBoxColumn
-    Friend WithEvents email As DataGridViewTextBoxColumn
-    Friend WithEvents huella As DataGridViewButtonColumn
+    Friend WithEvents MetroDateTime1 As MetroFramework.Controls.MetroDateTime
+    Friend WithEvents MetroComboBox3 As MetroFramework.Controls.MetroComboBox
 End Class
