@@ -361,9 +361,9 @@ Partial Class frmAltaSocio
         Me.MetroLabel14.AutoSize = True
         Me.MetroLabel14.Location = New System.Drawing.Point(506, 253)
         Me.MetroLabel14.Name = "MetroLabel14"
-        Me.MetroLabel14.Size = New System.Drawing.Size(142, 19)
+        Me.MetroLabel14.Size = New System.Drawing.Size(144, 19)
         Me.MetroLabel14.TabIndex = 82
-        Me.MetroLabel14.Text = "Observaciones Manuel"
+        Me.MetroLabel14.Text = "Observaciones Manolo"
         '
         'MetroLabel15
         '
