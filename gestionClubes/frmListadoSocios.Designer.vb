@@ -135,7 +135,7 @@ Partial Class frmListadoSocios
         Me.txtListadoSocios.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light
         Me.txtListadoSocios.CustomButton.UseSelectable = True
         Me.txtListadoSocios.CustomButton.Visible = False
-        Me.txtListadoSocios.Lines = New String() {"MetroTextBox1"}
+        Me.txtListadoSocios.Lines = New String(-1) {}
         Me.txtListadoSocios.Location = New System.Drawing.Point(114, 84)
         Me.txtListadoSocios.MaxLength = 32767
         Me.txtListadoSocios.Name = "txtListadoSocios"
@@ -146,7 +146,6 @@ Partial Class frmListadoSocios
         Me.txtListadoSocios.SelectionStart = 0
         Me.txtListadoSocios.Size = New System.Drawing.Size(229, 23)
         Me.txtListadoSocios.TabIndex = 96
-        Me.txtListadoSocios.Text = "MetroTextBox1"
         Me.txtListadoSocios.UseSelectable = True
         Me.txtListadoSocios.WaterMarkColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer))
         Me.txtListadoSocios.WaterMarkFont = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel)
