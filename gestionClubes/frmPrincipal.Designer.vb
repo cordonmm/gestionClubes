@@ -93,13 +93,13 @@ Partial Class frmPrincipal
         'NuevoToolStripMenuItem
         '
         Me.NuevoToolStripMenuItem.Name = "NuevoToolStripMenuItem"
-        Me.NuevoToolStripMenuItem.Size = New System.Drawing.Size(112, 22)
+        Me.NuevoToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.NuevoToolStripMenuItem.Text = "Nuevo"
         '
         'ListadoToolStripMenuItem
         '
         Me.ListadoToolStripMenuItem.Name = "ListadoToolStripMenuItem"
-        Me.ListadoToolStripMenuItem.Size = New System.Drawing.Size(112, 22)
+        Me.ListadoToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.ListadoToolStripMenuItem.Text = "Listado"
         '
         'BeneficiariosToolStripMenuItem
