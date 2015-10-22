@@ -26,14 +26,14 @@ Partial Class frmListadoSocios
         Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.dtgListadoSocios = New MetroFramework.Controls.MetroGrid()
-        Me.MetroLabel1 = New MetroFramework.Controls.MetroLabel()
-        Me.txtListadoSocios = New MetroFramework.Controls.MetroTextBox()
         Me.id = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.nombre = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.apellidos = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.dni = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.email = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.estado = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.MetroLabel1 = New MetroFramework.Controls.MetroLabel()
+        Me.txtListadoSocios = New MetroFramework.Controls.MetroTextBox()
         CType(Me.dtgListadoSocios, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -82,6 +82,36 @@ Partial Class frmListadoSocios
         Me.dtgListadoSocios.Size = New System.Drawing.Size(1086, 375)
         Me.dtgListadoSocios.TabIndex = 94
         '
+        'id
+        '
+        Me.id.HeaderText = "Id"
+        Me.id.Name = "id"
+        '
+        'nombre
+        '
+        Me.nombre.HeaderText = "Nombre"
+        Me.nombre.Name = "nombre"
+        '
+        'apellidos
+        '
+        Me.apellidos.HeaderText = "Apellidos"
+        Me.apellidos.Name = "apellidos"
+        '
+        'dni
+        '
+        Me.dni.HeaderText = "DNI"
+        Me.dni.Name = "dni"
+        '
+        'email
+        '
+        Me.email.HeaderText = "E-mail"
+        Me.email.Name = "email"
+        '
+        'estado
+        '
+        Me.estado.HeaderText = "Estado"
+        Me.estado.Name = "estado"
+        '
         'MetroLabel1
         '
         Me.MetroLabel1.AutoSize = True
@@ -121,41 +151,11 @@ Partial Class frmListadoSocios
         Me.txtListadoSocios.WaterMarkColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer))
         Me.txtListadoSocios.WaterMarkFont = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel)
         '
-        'id
-        '
-        Me.id.HeaderText = "Id"
-        Me.id.Name = "id"
-        '
-        'nombre
-        '
-        Me.nombre.HeaderText = "Nombre"
-        Me.nombre.Name = "nombre"
-        '
-        'apellidos
-        '
-        Me.apellidos.HeaderText = "Apellidos"
-        Me.apellidos.Name = "apellidos"
-        '
-        'dni
-        '
-        Me.dni.HeaderText = "DNI"
-        Me.dni.Name = "dni"
-        '
-        'email
-        '
-        Me.email.HeaderText = "E-mail"
-        Me.email.Name = "email"
-        '
-        'estado
-        '
-        Me.estado.HeaderText = "Estado"
-        Me.estado.Name = "estado"
-        '
         'frmListadoSocios
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1149, 685)
+        Me.ClientSize = New System.Drawing.Size(1158, 658)
         Me.Controls.Add(Me.txtListadoSocios)
         Me.Controls.Add(Me.MetroLabel1)
         Me.Controls.Add(Me.dtgListadoSocios)
