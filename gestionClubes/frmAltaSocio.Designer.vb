@@ -86,6 +86,7 @@ Partial Class frmAltaSocio
         '
         'PictureBox2
         '
+        Me.PictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.PictureBox2.Image = Global.GestionClubes.My.Resources.Resources.foto
         Me.PictureBox2.Location = New System.Drawing.Point(856, 97)
         Me.PictureBox2.Name = "PictureBox2"

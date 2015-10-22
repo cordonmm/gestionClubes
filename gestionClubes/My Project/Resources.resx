@@ -118,10 +118,37 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Recent Items" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Recent Items.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Live Messenger" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Live Messenger.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BitLocker" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BitLocker.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Services" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Services.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="huella" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\src\huella.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Chart - Google Docs" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Chart - Google Docs.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="foto" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\src\foto.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="door1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\door1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Contacts" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Contacts.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="door" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\door.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Google+ alt 2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Google+ alt 2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
