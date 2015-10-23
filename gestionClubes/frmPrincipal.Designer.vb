@@ -45,13 +45,13 @@ Partial Class frmPrincipal
         Me.ConfiguraciónToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MetroStyleExtender1 = New MetroFramework.Components.MetroStyleExtender(Me.components)
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+        Me.SociosToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.MetroButton2 = New MetroFramework.Controls.MetroButton()
         Me.MetroButton1 = New MetroFramework.Controls.MetroButton()
         Me.btnPuerta = New MetroFramework.Controls.MetroButton()
         Me.btnFaturación = New MetroFramework.Controls.MetroButton()
         Me.btnSacarEntrada = New MetroFramework.Controls.MetroButton()
         Me.btnSocios = New MetroFramework.Controls.MetroButton()
-        Me.SociosToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -141,7 +141,7 @@ Partial Class frmPrincipal
         'NuevaFacturaToolStripMenuItem
         '
         Me.NuevaFacturaToolStripMenuItem.Name = "NuevaFacturaToolStripMenuItem"
-        Me.NuevaFacturaToolStripMenuItem.Size = New System.Drawing.Size(150, 22)
+        Me.NuevaFacturaToolStripMenuItem.Size = New System.Drawing.Size(166, 22)
         Me.NuevaFacturaToolStripMenuItem.Text = "Nueva Factura"
         '
         'NuevoProToolStripMenuItem
@@ -155,6 +155,12 @@ Partial Class frmPrincipal
         Me.ConfiguraciónToolStripMenuItem.Name = "ConfiguraciónToolStripMenuItem"
         Me.ConfiguraciónToolStripMenuItem.Size = New System.Drawing.Size(95, 20)
         Me.ConfiguraciónToolStripMenuItem.Text = "Configuración"
+        '
+        'SociosToolStripMenuItem1
+        '
+        Me.SociosToolStripMenuItem1.Name = "SociosToolStripMenuItem1"
+        Me.SociosToolStripMenuItem1.Size = New System.Drawing.Size(184, 22)
+        Me.SociosToolStripMenuItem1.Text = "Nuevo"
         '
         'MetroButton2
         '
@@ -236,12 +242,6 @@ Partial Class frmPrincipal
         Me.btnSocios.Text = "Socios"
         Me.btnSocios.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         Me.btnSocios.UseSelectable = True
-        '
-        'SociosToolStripMenuItem1
-        '
-        Me.SociosToolStripMenuItem1.Name = "SociosToolStripMenuItem1"
-        Me.SociosToolStripMenuItem1.Size = New System.Drawing.Size(184, 22)
-        Me.SociosToolStripMenuItem1.Text = "Nuevo"
         '
         'frmPrincipal
         '

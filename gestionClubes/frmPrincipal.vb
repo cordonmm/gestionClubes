@@ -48,4 +48,10 @@
         frmListadoSocios = New frmListadoSocios
         frmListadoSocios.Show()
     End Sub
+
+    Private Sub ImpresiónDeCarnetsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ImpresiónDeCarnetsToolStripMenuItem.Click
+        Dim frmCarnet As frmCarnet
+        frmCarnet = New frmCarnet
+        frmCarnet.Show()
+    End Sub
 End Class
