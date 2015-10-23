@@ -22,24 +22,36 @@ Partial Class frmListadoSocios
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.dtgListadoSocios = New MetroFramework.Controls.MetroGrid()
-        Me.id = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.nombre = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.apellidos = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.dni = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.email = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.estado = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.IdDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.NombreDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DniDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ApellidosDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.EstadoDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ObservacionesDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.FechaaltaDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.EmailDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.TelefonoDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.TableBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.VarelaDataSet = New GestionClubes.VarelaDataSet()
         Me.MetroLabel1 = New MetroFramework.Controls.MetroLabel()
-        Me.txtListadoSocios = New MetroFramework.Controls.MetroTextBox()
+        Me.TableTableAdapter = New GestionClubes.VarelaDataSetTableAdapters.TableTableAdapter()
+        Me.txtSocio = New System.Windows.Forms.TextBox()
         CType(Me.dtgListadoSocios, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.TableBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.VarelaDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'dtgListadoSocios
         '
+        Me.dtgListadoSocios.AllowUserToAddRows = False
+        Me.dtgListadoSocios.AllowUserToDeleteRows = False
         Me.dtgListadoSocios.AllowUserToResizeRows = False
+        Me.dtgListadoSocios.AutoGenerateColumns = False
         Me.dtgListadoSocios.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.dtgListadoSocios.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.dtgListadoSocios.BorderStyle = System.Windows.Forms.BorderStyle.None
@@ -54,7 +66,8 @@ Partial Class frmListadoSocios
         DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.dtgListadoSocios.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
         Me.dtgListadoSocios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dtgListadoSocios.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.id, Me.nombre, Me.apellidos, Me.dni, Me.email, Me.estado})
+        Me.dtgListadoSocios.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.IdDataGridViewTextBoxColumn, Me.NombreDataGridViewTextBoxColumn, Me.DniDataGridViewTextBoxColumn, Me.ApellidosDataGridViewTextBoxColumn, Me.EstadoDataGridViewTextBoxColumn, Me.ObservacionesDataGridViewTextBoxColumn, Me.FechaaltaDataGridViewTextBoxColumn, Me.EmailDataGridViewTextBoxColumn, Me.TelefonoDataGridViewTextBoxColumn})
+        Me.dtgListadoSocios.DataSource = Me.TableBindingSource
         DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
         DataGridViewCellStyle2.Font = New System.Drawing.Font("Segoe UI", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
@@ -68,6 +81,7 @@ Partial Class frmListadoSocios
         Me.dtgListadoSocios.GridColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.dtgListadoSocios.Location = New System.Drawing.Point(23, 138)
         Me.dtgListadoSocios.Name = "dtgListadoSocios"
+        Me.dtgListadoSocios.ReadOnly = True
         Me.dtgListadoSocios.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
         DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(219, Byte), Integer))
@@ -80,37 +94,80 @@ Partial Class frmListadoSocios
         Me.dtgListadoSocios.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing
         Me.dtgListadoSocios.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.dtgListadoSocios.Size = New System.Drawing.Size(1086, 375)
-        Me.dtgListadoSocios.TabIndex = 94
+        Me.dtgListadoSocios.TabIndex = 96
         '
-        'id
+        'IdDataGridViewTextBoxColumn
         '
-        Me.id.HeaderText = "Id"
-        Me.id.Name = "id"
+        Me.IdDataGridViewTextBoxColumn.DataPropertyName = "Id"
+        Me.IdDataGridViewTextBoxColumn.HeaderText = "Nº Socio"
+        Me.IdDataGridViewTextBoxColumn.Name = "IdDataGridViewTextBoxColumn"
+        Me.IdDataGridViewTextBoxColumn.ReadOnly = True
         '
-        'nombre
+        'NombreDataGridViewTextBoxColumn
         '
-        Me.nombre.HeaderText = "Nombre"
-        Me.nombre.Name = "nombre"
+        Me.NombreDataGridViewTextBoxColumn.DataPropertyName = "nombre"
+        Me.NombreDataGridViewTextBoxColumn.HeaderText = "nombre"
+        Me.NombreDataGridViewTextBoxColumn.Name = "NombreDataGridViewTextBoxColumn"
+        Me.NombreDataGridViewTextBoxColumn.ReadOnly = True
         '
-        'apellidos
+        'DniDataGridViewTextBoxColumn
         '
-        Me.apellidos.HeaderText = "Apellidos"
-        Me.apellidos.Name = "apellidos"
+        Me.DniDataGridViewTextBoxColumn.DataPropertyName = "dni"
+        Me.DniDataGridViewTextBoxColumn.HeaderText = "dni"
+        Me.DniDataGridViewTextBoxColumn.Name = "DniDataGridViewTextBoxColumn"
+        Me.DniDataGridViewTextBoxColumn.ReadOnly = True
         '
-        'dni
+        'ApellidosDataGridViewTextBoxColumn
         '
-        Me.dni.HeaderText = "DNI"
-        Me.dni.Name = "dni"
+        Me.ApellidosDataGridViewTextBoxColumn.DataPropertyName = "apellidos"
+        Me.ApellidosDataGridViewTextBoxColumn.HeaderText = "apellidos"
+        Me.ApellidosDataGridViewTextBoxColumn.Name = "ApellidosDataGridViewTextBoxColumn"
+        Me.ApellidosDataGridViewTextBoxColumn.ReadOnly = True
         '
-        'email
+        'EstadoDataGridViewTextBoxColumn
         '
-        Me.email.HeaderText = "E-mail"
-        Me.email.Name = "email"
+        Me.EstadoDataGridViewTextBoxColumn.DataPropertyName = "estado"
+        Me.EstadoDataGridViewTextBoxColumn.HeaderText = "estado"
+        Me.EstadoDataGridViewTextBoxColumn.Name = "EstadoDataGridViewTextBoxColumn"
+        Me.EstadoDataGridViewTextBoxColumn.ReadOnly = True
         '
-        'estado
+        'ObservacionesDataGridViewTextBoxColumn
         '
-        Me.estado.HeaderText = "Estado"
-        Me.estado.Name = "estado"
+        Me.ObservacionesDataGridViewTextBoxColumn.DataPropertyName = "observaciones"
+        Me.ObservacionesDataGridViewTextBoxColumn.HeaderText = "observaciones"
+        Me.ObservacionesDataGridViewTextBoxColumn.Name = "ObservacionesDataGridViewTextBoxColumn"
+        Me.ObservacionesDataGridViewTextBoxColumn.ReadOnly = True
+        '
+        'FechaaltaDataGridViewTextBoxColumn
+        '
+        Me.FechaaltaDataGridViewTextBoxColumn.DataPropertyName = "fechaalta"
+        Me.FechaaltaDataGridViewTextBoxColumn.HeaderText = "fechaalta"
+        Me.FechaaltaDataGridViewTextBoxColumn.Name = "FechaaltaDataGridViewTextBoxColumn"
+        Me.FechaaltaDataGridViewTextBoxColumn.ReadOnly = True
+        '
+        'EmailDataGridViewTextBoxColumn
+        '
+        Me.EmailDataGridViewTextBoxColumn.DataPropertyName = "email"
+        Me.EmailDataGridViewTextBoxColumn.HeaderText = "email"
+        Me.EmailDataGridViewTextBoxColumn.Name = "EmailDataGridViewTextBoxColumn"
+        Me.EmailDataGridViewTextBoxColumn.ReadOnly = True
+        '
+        'TelefonoDataGridViewTextBoxColumn
+        '
+        Me.TelefonoDataGridViewTextBoxColumn.DataPropertyName = "telefono"
+        Me.TelefonoDataGridViewTextBoxColumn.HeaderText = "telefono"
+        Me.TelefonoDataGridViewTextBoxColumn.Name = "TelefonoDataGridViewTextBoxColumn"
+        Me.TelefonoDataGridViewTextBoxColumn.ReadOnly = True
+        '
+        'TableBindingSource
+        '
+        Me.TableBindingSource.DataMember = "Table"
+        Me.TableBindingSource.DataSource = Me.VarelaDataSet
+        '
+        'VarelaDataSet
+        '
+        Me.VarelaDataSet.DataSetName = "VarelaDataSet"
+        Me.VarelaDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
         'MetroLabel1
         '
@@ -121,57 +178,47 @@ Partial Class frmListadoSocios
         Me.MetroLabel1.TabIndex = 95
         Me.MetroLabel1.Text = "Socio"
         '
-        'txtListadoSocios
+        'TableTableAdapter
         '
+        Me.TableTableAdapter.ClearBeforeFill = True
         '
+        'txtSocio
         '
-        '
-        Me.txtListadoSocios.CustomButton.Image = Nothing
-        Me.txtListadoSocios.CustomButton.Location = New System.Drawing.Point(207, 1)
-        Me.txtListadoSocios.CustomButton.Name = ""
-        Me.txtListadoSocios.CustomButton.Size = New System.Drawing.Size(21, 21)
-        Me.txtListadoSocios.CustomButton.Style = MetroFramework.MetroColorStyle.Blue
-        Me.txtListadoSocios.CustomButton.TabIndex = 1
-        Me.txtListadoSocios.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light
-        Me.txtListadoSocios.CustomButton.UseSelectable = True
-        Me.txtListadoSocios.CustomButton.Visible = False
-        Me.txtListadoSocios.Lines = New String(-1) {}
-        Me.txtListadoSocios.Location = New System.Drawing.Point(114, 84)
-        Me.txtListadoSocios.MaxLength = 32767
-        Me.txtListadoSocios.Name = "txtListadoSocios"
-        Me.txtListadoSocios.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.txtListadoSocios.ScrollBars = System.Windows.Forms.ScrollBars.None
-        Me.txtListadoSocios.SelectedText = ""
-        Me.txtListadoSocios.SelectionLength = 0
-        Me.txtListadoSocios.SelectionStart = 0
-        Me.txtListadoSocios.Size = New System.Drawing.Size(229, 23)
-        Me.txtListadoSocios.TabIndex = 96
-        Me.txtListadoSocios.UseSelectable = True
-        Me.txtListadoSocios.WaterMarkColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer))
-        Me.txtListadoSocios.WaterMarkFont = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel)
+        Me.txtSocio.Location = New System.Drawing.Point(70, 84)
+        Me.txtSocio.Name = "txtSocio"
+        Me.txtSocio.Size = New System.Drawing.Size(125, 20)
+        Me.txtSocio.TabIndex = 97
         '
         'frmListadoSocios
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1158, 658)
-        Me.Controls.Add(Me.txtListadoSocios)
+        Me.Controls.Add(Me.txtSocio)
         Me.Controls.Add(Me.MetroLabel1)
         Me.Controls.Add(Me.dtgListadoSocios)
         Me.Name = "frmListadoSocios"
         Me.Text = "Listado de Socios"
         CType(Me.dtgListadoSocios, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.TableBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.VarelaDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
     Friend WithEvents dtgListadoSocios As MetroFramework.Controls.MetroGrid
     Friend WithEvents MetroLabel1 As MetroFramework.Controls.MetroLabel
-    Friend WithEvents txtListadoSocios As MetroFramework.Controls.MetroTextBox
-    Friend WithEvents id As DataGridViewTextBoxColumn
-    Friend WithEvents nombre As DataGridViewTextBoxColumn
-    Friend WithEvents apellidos As DataGridViewTextBoxColumn
-    Friend WithEvents dni As DataGridViewTextBoxColumn
-    Friend WithEvents email As DataGridViewTextBoxColumn
-    Friend WithEvents estado As DataGridViewTextBoxColumn
+    Friend WithEvents VarelaDataSet As VarelaDataSet
+    Friend WithEvents TableBindingSource As BindingSource
+    Friend WithEvents TableTableAdapter As VarelaDataSetTableAdapters.TableTableAdapter
+    Friend WithEvents IdDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents NombreDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents DniDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents ApellidosDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents EstadoDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents ObservacionesDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents FechaaltaDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents EmailDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents TelefonoDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents txtSocio As TextBox
 End Class

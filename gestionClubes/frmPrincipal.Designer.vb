@@ -32,9 +32,6 @@ Partial Class frmPrincipal
         Me.ListadoUsuariosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.PermisosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SociosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.SociosToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.NuevoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ListadoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.BeneficiariosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.BonosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ListadoDeSociosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -43,17 +40,18 @@ Partial Class frmPrincipal
         Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
         Me.CuotasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ContabilidadToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.NuevaFacturaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.NuevoProToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ConfiguraciónToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MetroStyleExtender1 = New MetroFramework.Components.MetroStyleExtender(Me.components)
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
-        Me.NuevaFacturaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.NuevoProToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MetroButton2 = New MetroFramework.Controls.MetroButton()
         Me.MetroButton1 = New MetroFramework.Controls.MetroButton()
         Me.btnPuerta = New MetroFramework.Controls.MetroButton()
         Me.btnFaturación = New MetroFramework.Controls.MetroButton()
         Me.btnSacarEntrada = New MetroFramework.Controls.MetroButton()
         Me.btnSocios = New MetroFramework.Controls.MetroButton()
+        Me.SociosToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -91,25 +89,6 @@ Partial Class frmPrincipal
         Me.SociosToolStripMenuItem.Name = "SociosToolStripMenuItem"
         Me.SociosToolStripMenuItem.Size = New System.Drawing.Size(53, 20)
         Me.SociosToolStripMenuItem.Text = "Socios"
-        '
-        'SociosToolStripMenuItem1
-        '
-        Me.SociosToolStripMenuItem1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NuevoToolStripMenuItem, Me.ListadoToolStripMenuItem})
-        Me.SociosToolStripMenuItem1.Name = "SociosToolStripMenuItem1"
-        Me.SociosToolStripMenuItem1.Size = New System.Drawing.Size(184, 22)
-        Me.SociosToolStripMenuItem1.Text = "Socios"
-        '
-        'NuevoToolStripMenuItem
-        '
-        Me.NuevoToolStripMenuItem.Name = "NuevoToolStripMenuItem"
-        Me.NuevoToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-        Me.NuevoToolStripMenuItem.Text = "Nuevo"
-        '
-        'ListadoToolStripMenuItem
-        '
-        Me.ListadoToolStripMenuItem.Name = "ListadoToolStripMenuItem"
-        Me.ListadoToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-        Me.ListadoToolStripMenuItem.Text = "Listado"
         '
         'BeneficiariosToolStripMenuItem
         '
@@ -159,12 +138,6 @@ Partial Class frmPrincipal
         Me.ContabilidadToolStripMenuItem.Size = New System.Drawing.Size(87, 20)
         Me.ContabilidadToolStripMenuItem.Text = "Contabilidad"
         '
-        'ConfiguraciónToolStripMenuItem
-        '
-        Me.ConfiguraciónToolStripMenuItem.Name = "ConfiguraciónToolStripMenuItem"
-        Me.ConfiguraciónToolStripMenuItem.Size = New System.Drawing.Size(95, 20)
-        Me.ConfiguraciónToolStripMenuItem.Text = "Configuración"
-        '
         'NuevaFacturaToolStripMenuItem
         '
         Me.NuevaFacturaToolStripMenuItem.Name = "NuevaFacturaToolStripMenuItem"
@@ -174,8 +147,14 @@ Partial Class frmPrincipal
         'NuevoProToolStripMenuItem
         '
         Me.NuevoProToolStripMenuItem.Name = "NuevoProToolStripMenuItem"
-        Me.NuevoProToolStripMenuItem.Size = New System.Drawing.Size(150, 22)
-        Me.NuevoProToolStripMenuItem.Text = "Nuevo Pro"
+        Me.NuevoProToolStripMenuItem.Size = New System.Drawing.Size(166, 22)
+        Me.NuevoProToolStripMenuItem.Text = "Nuevo Proveedor"
+        '
+        'ConfiguraciónToolStripMenuItem
+        '
+        Me.ConfiguraciónToolStripMenuItem.Name = "ConfiguraciónToolStripMenuItem"
+        Me.ConfiguraciónToolStripMenuItem.Size = New System.Drawing.Size(95, 20)
+        Me.ConfiguraciónToolStripMenuItem.Text = "Configuración"
         '
         'MetroButton2
         '
@@ -258,6 +237,12 @@ Partial Class frmPrincipal
         Me.btnSocios.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         Me.btnSocios.UseSelectable = True
         '
+        'SociosToolStripMenuItem1
+        '
+        Me.SociosToolStripMenuItem1.Name = "SociosToolStripMenuItem1"
+        Me.SociosToolStripMenuItem1.Size = New System.Drawing.Size(184, 22)
+        Me.SociosToolStripMenuItem1.Text = "Nuevo"
+        '
         'frmPrincipal
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -285,7 +270,6 @@ Partial Class frmPrincipal
     Friend WithEvents ListadoUsuariosToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents PermisosToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents SociosToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents SociosToolStripMenuItem1 As ToolStripMenuItem
     Friend WithEvents BeneficiariosToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents BonosToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ListadoDeSociosToolStripMenuItem As ToolStripMenuItem
@@ -295,8 +279,6 @@ Partial Class frmPrincipal
     Friend WithEvents CuotasToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ContabilidadToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ConfiguraciónToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents NuevoToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents ListadoToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents MetroStyleExtender1 As MetroFramework.Components.MetroStyleExtender
     Friend WithEvents Timer1 As Timer
     Friend WithEvents btnSocios As MetroFramework.Controls.MetroButton
@@ -307,4 +289,5 @@ Partial Class frmPrincipal
     Friend WithEvents btnPuerta As MetroFramework.Controls.MetroButton
     Friend WithEvents MetroButton1 As MetroFramework.Controls.MetroButton
     Friend WithEvents MetroButton2 As MetroFramework.Controls.MetroButton
+    Friend WithEvents SociosToolStripMenuItem1 As ToolStripMenuItem
 End Class
