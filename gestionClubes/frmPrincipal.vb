@@ -76,4 +76,8 @@
         frmNuevoProveedor = New frmNuevoProveedor
         frmNuevoProveedor.Show()
     End Sub
+
+    Private Sub btnFaturación_Click(sender As Object, e As EventArgs) Handles btnFaturación.Click
+
+    End Sub
 End Class
