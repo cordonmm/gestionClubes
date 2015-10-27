@@ -20,9 +20,9 @@ Option Explicit On
  Global.System.ComponentModel.DesignerCategoryAttribute("code"),  _
  Global.System.ComponentModel.ToolboxItem(true),  _
  Global.System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema"),  _
- Global.System.Xml.Serialization.XmlRootAttribute("VarelaDataSet"),  _
+ Global.System.Xml.Serialization.XmlRootAttribute("VarelaDataSet3"),  _
  Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")>  _
-Partial Public Class VarelaDataSet
+Partial Public Class VarelaDataSet3
     Inherits Global.System.Data.DataSet
     
     Private tableTable As TableDataTable
@@ -128,7 +128,7 @@ Partial Public Class VarelaDataSet
     <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
      Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
     Public Overrides Function Clone() As Global.System.Data.DataSet
-        Dim cln As VarelaDataSet = CType(MyBase.Clone,VarelaDataSet)
+        Dim cln As VarelaDataSet3 = CType(MyBase.Clone,VarelaDataSet3)
         cln.InitVars
         cln.SchemaSerializationMode = Me.SchemaSerializationMode
         Return cln
@@ -199,9 +199,9 @@ Partial Public Class VarelaDataSet
     <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
      Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
     Private Sub InitClass()
-        Me.DataSetName = "VarelaDataSet"
+        Me.DataSetName = "VarelaDataSet3"
         Me.Prefix = ""
-        Me.Namespace = "http://tempuri.org/VarelaDataSet.xsd"
+        Me.Namespace = "http://tempuri.org/VarelaDataSet3.xsd"
         Me.EnforceConstraints = true
         Me.SchemaSerializationMode = Global.System.Data.SchemaSerializationMode.IncludeSchema
         Me.tableTable = New TableDataTable()
@@ -225,7 +225,7 @@ Partial Public Class VarelaDataSet
     <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
      Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
     Public Shared Function GetTypedDataSetSchema(ByVal xs As Global.System.Xml.Schema.XmlSchemaSet) As Global.System.Xml.Schema.XmlSchemaComplexType
-        Dim ds As VarelaDataSet = New VarelaDataSet()
+        Dim ds As VarelaDataSet3 = New VarelaDataSet3()
         Dim type As Global.System.Xml.Schema.XmlSchemaComplexType = New Global.System.Xml.Schema.XmlSchemaComplexType()
         Dim sequence As Global.System.Xml.Schema.XmlSchemaSequence = New Global.System.Xml.Schema.XmlSchemaSequence()
         Dim any As Global.System.Xml.Schema.XmlSchemaAny = New Global.System.Xml.Schema.XmlSchemaAny()
@@ -303,7 +303,7 @@ Partial Public Class VarelaDataSet
         
         Private columntelefono As Global.System.Data.DataColumn
         
-        Private columnAsistencias As Global.System.Data.DataColumn
+        Private columnasistencia As Global.System.Data.DataColumn
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
@@ -422,9 +422,9 @@ Partial Public Class VarelaDataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public ReadOnly Property AsistenciasColumn() As Global.System.Data.DataColumn
+        Public ReadOnly Property asistenciaColumn() As Global.System.Data.DataColumn
             Get
-                Return Me.columnAsistencias
+                Return Me.columnasistencia
             End Get
         End Property
         
@@ -465,9 +465,9 @@ Partial Public Class VarelaDataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Overloads Function AddTableRow(ByVal Id As Integer, ByVal dni As String, ByVal nombre As String, ByVal apellidos As String, ByVal estado As String, ByVal observaciones As String, ByVal fechaalta As Date, ByVal fechabaja As Date, ByVal email As String, ByVal telefono As String, ByVal Asistencias As String) As TableRow
+        Public Overloads Function AddTableRow(ByVal Id As Integer, ByVal dni As String, ByVal nombre As String, ByVal apellidos As String, ByVal estado As String, ByVal observaciones As String, ByVal fechaalta As Date, ByVal fechabaja As Date, ByVal email As String, ByVal telefono As String, ByVal asistencia As Integer) As TableRow
             Dim rowTableRow As TableRow = CType(Me.NewRow,TableRow)
-            Dim columnValuesArray() As Object = New Object() {Id, dni, nombre, apellidos, estado, observaciones, fechaalta, fechabaja, email, telefono, Asistencias}
+            Dim columnValuesArray() As Object = New Object() {Id, dni, nombre, apellidos, estado, observaciones, fechaalta, fechabaja, email, telefono, asistencia}
             rowTableRow.ItemArray = columnValuesArray
             Me.Rows.Add(rowTableRow)
             Return rowTableRow
@@ -506,7 +506,7 @@ Partial Public Class VarelaDataSet
             Me.columnfechabaja = MyBase.Columns("fechabaja")
             Me.columnemail = MyBase.Columns("email")
             Me.columntelefono = MyBase.Columns("telefono")
-            Me.columnAsistencias = MyBase.Columns("Asistencias")
+            Me.columnasistencia = MyBase.Columns("asistencia")
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -532,8 +532,8 @@ Partial Public Class VarelaDataSet
             MyBase.Columns.Add(Me.columnemail)
             Me.columntelefono = New Global.System.Data.DataColumn("telefono", GetType(String), Nothing, Global.System.Data.MappingType.Element)
             MyBase.Columns.Add(Me.columntelefono)
-            Me.columnAsistencias = New Global.System.Data.DataColumn("Asistencias", GetType(String), Nothing, Global.System.Data.MappingType.Element)
-            MyBase.Columns.Add(Me.columnAsistencias)
+            Me.columnasistencia = New Global.System.Data.DataColumn("asistencia", GetType(Integer), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnasistencia)
             Me.Constraints.Add(New Global.System.Data.UniqueConstraint("Constraint1", New Global.System.Data.DataColumn() {Me.columnId}, true))
             Me.columnId.AllowDBNull = false
             Me.columnId.Unique = true
@@ -618,7 +618,7 @@ Partial Public Class VarelaDataSet
         Public Shared Function GetTypedTableSchema(ByVal xs As Global.System.Xml.Schema.XmlSchemaSet) As Global.System.Xml.Schema.XmlSchemaComplexType
             Dim type As Global.System.Xml.Schema.XmlSchemaComplexType = New Global.System.Xml.Schema.XmlSchemaComplexType()
             Dim sequence As Global.System.Xml.Schema.XmlSchemaSequence = New Global.System.Xml.Schema.XmlSchemaSequence()
-            Dim ds As VarelaDataSet = New VarelaDataSet()
+            Dim ds As VarelaDataSet3 = New VarelaDataSet3()
             Dim any1 As Global.System.Xml.Schema.XmlSchemaAny = New Global.System.Xml.Schema.XmlSchemaAny()
             any1.Namespace = "http://www.w3.org/2001/XMLSchema"
             any1.MinOccurs = New Decimal(0)
@@ -843,16 +843,16 @@ Partial Public Class VarelaDataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Property Asistencias() As String
+        Public Property asistencia() As Integer
             Get
                 Try 
-                    Return CType(Me(Me.tableTable.AsistenciasColumn),String)
+                    Return CType(Me(Me.tableTable.asistenciaColumn),Integer)
                 Catch e As Global.System.InvalidCastException
-                    Throw New Global.System.Data.StrongTypingException("El valor de la columna 'Asistencias' de la tabla 'Table' es DBNull.", e)
+                    Throw New Global.System.Data.StrongTypingException("El valor de la columna 'asistencia' de la tabla 'Table' es DBNull.", e)
                 End Try
             End Get
             Set
-                Me(Me.tableTable.AsistenciasColumn) = value
+                Me(Me.tableTable.asistenciaColumn) = value
             End Set
         End Property
         
@@ -966,14 +966,14 @@ Partial Public Class VarelaDataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Function IsAsistenciasNull() As Boolean
-            Return Me.IsNull(Me.tableTable.AsistenciasColumn)
+        Public Function IsasistenciaNull() As Boolean
+            Return Me.IsNull(Me.tableTable.asistenciaColumn)
         End Function
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Sub SetAsistenciasNull()
-            Me(Me.tableTable.AsistenciasColumn) = Global.System.Convert.DBNull
+        Public Sub SetasistenciaNull()
+            Me(Me.tableTable.asistenciaColumn) = Global.System.Convert.DBNull
         End Sub
     End Class
     
@@ -1014,7 +1014,7 @@ Partial Public Class VarelaDataSet
     End Class
 End Class
 
-Namespace VarelaDataSetTableAdapters
+Namespace VarelaDataSet3TableAdapters
     
     '''<summary>
     '''Represents the connection and commands used to retrieve and save data.
@@ -1153,6 +1153,7 @@ Namespace VarelaDataSetTableAdapters
             tableMapping.ColumnMappings.Add("fechabaja", "fechabaja")
             tableMapping.ColumnMappings.Add("email", "email")
             tableMapping.ColumnMappings.Add("telefono", "telefono")
+            tableMapping.ColumnMappings.Add("asistencia", "asistencia")
             Me._adapter.TableMappings.Add(tableMapping)
             Me._adapter.DeleteCommand = New Global.System.Data.SqlClient.SqlCommand()
             Me._adapter.DeleteCommand.Connection = Me.Connection
@@ -1165,7 +1166,8 @@ Namespace VarelaDataSetTableAdapters
                 "Null_fechabaja = 1 AND [fechabaja] IS NULL) OR ([fechabaja] = @Original_fechabaj"& _ 
                 "a)) AND ((@IsNull_email = 1 AND [email] IS NULL) OR ([email] = @Original_email))"& _ 
                 " AND ((@IsNull_telefono = 1 AND [telefono] IS NULL) OR ([telefono] = @Original_t"& _ 
-                "elefono)))"
+                "elefono)) AND ((@IsNull_asistencia = 1 AND [asistencia] IS NULL) OR ([asistencia"& _ 
+                "] = @Original_asistencia)))"
             Me._adapter.DeleteCommand.CommandType = Global.System.Data.CommandType.Text
             Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_Id", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Id", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
             Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_dni", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "dni", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
@@ -1184,13 +1186,16 @@ Namespace VarelaDataSetTableAdapters
             Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_email", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "email", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
             Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_telefono", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "telefono", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
             Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_telefono", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "telefono", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_asistencia", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "asistencia", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_asistencia", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "asistencia", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
             Me._adapter.InsertCommand = New Global.System.Data.SqlClient.SqlCommand()
             Me._adapter.InsertCommand.Connection = Me.Connection
             Me._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[Table] ([Id], [dni], [nombre], [apellidos], [estado], [observa"& _ 
-                "ciones], [fechaalta], [fechabaja], [email], [telefono]) VALUES (@Id, @dni, @nomb"& _ 
-                "re, @apellidos, @estado, @observaciones, @fechaalta, @fechabaja, @email, @telefo"& _ 
-                "no);"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"SELECT Id, dni, nombre, apellidos, estado, observaciones, fechaalta, fecha"& _ 
-                "baja, email, telefono FROM [Table] WHERE (Id = @Id)"
+                "ciones], [fechaalta], [fechabaja], [email], [telefono], [asistencia]) VALUES (@I"& _ 
+                "d, @dni, @nombre, @apellidos, @estado, @observaciones, @fechaalta, @fechabaja, @"& _ 
+                "email, @telefono, @asistencia);"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"SELECT Id, dni, nombre, apellidos, estado, obse"& _ 
+                "rvaciones, fechaalta, fechabaja, email, telefono, asistencia FROM [Table] WHERE "& _ 
+                "(Id = @Id)"
             Me._adapter.InsertCommand.CommandType = Global.System.Data.CommandType.Text
             Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Id", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Id", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@dni", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "dni", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
@@ -1202,22 +1207,25 @@ Namespace VarelaDataSetTableAdapters
             Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@fechabaja", Global.System.Data.SqlDbType.DateTime, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "fechabaja", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@email", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "email", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@telefono", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "telefono", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@asistencia", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "asistencia", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             Me._adapter.UpdateCommand = New Global.System.Data.SqlClient.SqlCommand()
             Me._adapter.UpdateCommand.Connection = Me.Connection
             Me._adapter.UpdateCommand.CommandText = "UPDATE [dbo].[Table] SET [Id] = @Id, [dni] = @dni, [nombre] = @nombre, [apellidos"& _ 
                 "] = @apellidos, [estado] = @estado, [observaciones] = @observaciones, [fechaalta"& _ 
                 "] = @fechaalta, [fechabaja] = @fechabaja, [email] = @email, [telefono] = @telefo"& _ 
-                "no WHERE (([Id] = @Original_Id) AND ((@IsNull_dni = 1 AND [dni] IS NULL) OR ([dn"& _ 
-                "i] = @Original_dni)) AND ((@IsNull_nombre = 1 AND [nombre] IS NULL) OR ([nombre]"& _ 
-                " = @Original_nombre)) AND ((@IsNull_apellidos = 1 AND [apellidos] IS NULL) OR (["& _ 
-                "apellidos] = @Original_apellidos)) AND ((@IsNull_estado = 1 AND [estado] IS NULL"& _ 
-                ") OR ([estado] = @Original_estado)) AND ((@IsNull_fechaalta = 1 AND [fechaalta] "& _ 
-                "IS NULL) OR ([fechaalta] = @Original_fechaalta)) AND ((@IsNull_fechabaja = 1 AND"& _ 
-                " [fechabaja] IS NULL) OR ([fechabaja] = @Original_fechabaja)) AND ((@IsNull_emai"& _ 
-                "l = 1 AND [email] IS NULL) OR ([email] = @Original_email)) AND ((@IsNull_telefon"& _ 
-                "o = 1 AND [telefono] IS NULL) OR ([telefono] = @Original_telefono)));"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"SELECT Id"& _ 
-                ", dni, nombre, apellidos, estado, observaciones, fechaalta, fechabaja, email, te"& _ 
-                "lefono FROM [Table] WHERE (Id = @Id)"
+                "no, [asistencia] = @asistencia WHERE (([Id] = @Original_Id) AND ((@IsNull_dni = "& _ 
+                "1 AND [dni] IS NULL) OR ([dni] = @Original_dni)) AND ((@IsNull_nombre = 1 AND [n"& _ 
+                "ombre] IS NULL) OR ([nombre] = @Original_nombre)) AND ((@IsNull_apellidos = 1 AN"& _ 
+                "D [apellidos] IS NULL) OR ([apellidos] = @Original_apellidos)) AND ((@IsNull_est"& _ 
+                "ado = 1 AND [estado] IS NULL) OR ([estado] = @Original_estado)) AND ((@IsNull_fe"& _ 
+                "chaalta = 1 AND [fechaalta] IS NULL) OR ([fechaalta] = @Original_fechaalta)) AND"& _ 
+                " ((@IsNull_fechabaja = 1 AND [fechabaja] IS NULL) OR ([fechabaja] = @Original_fe"& _ 
+                "chabaja)) AND ((@IsNull_email = 1 AND [email] IS NULL) OR ([email] = @Original_e"& _ 
+                "mail)) AND ((@IsNull_telefono = 1 AND [telefono] IS NULL) OR ([telefono] = @Orig"& _ 
+                "inal_telefono)) AND ((@IsNull_asistencia = 1 AND [asistencia] IS NULL) OR ([asis"& _ 
+                "tencia] = @Original_asistencia)));"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"SELECT Id, dni, nombre, apellidos, estado, o"& _ 
+                "bservaciones, fechaalta, fechabaja, email, telefono, asistencia FROM [Table] WHE"& _ 
+                "RE (Id = @Id)"
             Me._adapter.UpdateCommand.CommandType = Global.System.Data.CommandType.Text
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Id", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Id", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@dni", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "dni", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
@@ -1229,6 +1237,7 @@ Namespace VarelaDataSetTableAdapters
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@fechabaja", Global.System.Data.SqlDbType.DateTime, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "fechabaja", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@email", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "email", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@telefono", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "telefono", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@asistencia", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "asistencia", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_Id", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Id", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_dni", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "dni", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_dni", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "dni", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
@@ -1246,6 +1255,8 @@ Namespace VarelaDataSetTableAdapters
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_email", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "email", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_telefono", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "telefono", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_telefono", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "telefono", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_asistencia", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "asistencia", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_asistencia", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "asistencia", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -1262,7 +1273,7 @@ Namespace VarelaDataSetTableAdapters
             Me._commandCollection(0) = New Global.System.Data.SqlClient.SqlCommand()
             Me._commandCollection(0).Connection = Me.Connection
             Me._commandCollection(0).CommandText = "SELECT Id, dni, nombre, apellidos, estado, observaciones, fechaalta, fechabaja, e"& _ 
-                "mail, telefono FROM dbo.[Table]"
+                "mail, telefono, asistencia FROM dbo.[Table]"
             Me._commandCollection(0).CommandType = Global.System.Data.CommandType.Text
         End Sub
         
@@ -1270,7 +1281,7 @@ Namespace VarelaDataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Fill, true)>  _
-        Public Overloads Overridable Function Fill(ByVal dataTable As VarelaDataSet.TableDataTable) As Integer
+        Public Overloads Overridable Function Fill(ByVal dataTable As VarelaDataSet3.TableDataTable) As Integer
             Me.Adapter.SelectCommand = Me.CommandCollection(0)
             If (Me.ClearBeforeFill = true) Then
                 dataTable.Clear
@@ -1283,9 +1294,9 @@ Namespace VarelaDataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.[Select], true)>  _
-        Public Overloads Overridable Function GetData() As VarelaDataSet.TableDataTable
+        Public Overloads Overridable Function GetData() As VarelaDataSet3.TableDataTable
             Me.Adapter.SelectCommand = Me.CommandCollection(0)
-            Dim dataTable As VarelaDataSet.TableDataTable = New VarelaDataSet.TableDataTable()
+            Dim dataTable As VarelaDataSet3.TableDataTable = New VarelaDataSet3.TableDataTable()
             Me.Adapter.Fill(dataTable)
             Return dataTable
         End Function
@@ -1293,14 +1304,14 @@ Namespace VarelaDataSetTableAdapters
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
-        Public Overloads Overridable Function Update(ByVal dataTable As VarelaDataSet.TableDataTable) As Integer
+        Public Overloads Overridable Function Update(ByVal dataTable As VarelaDataSet3.TableDataTable) As Integer
             Return Me.Adapter.Update(dataTable)
         End Function
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
-        Public Overloads Overridable Function Update(ByVal dataSet As VarelaDataSet) As Integer
+        Public Overloads Overridable Function Update(ByVal dataSet As VarelaDataSet3) As Integer
             Return Me.Adapter.Update(dataSet, "Table")
         End Function
         
@@ -1322,7 +1333,7 @@ Namespace VarelaDataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Delete, true)>  _
-        Public Overloads Overridable Function Delete(ByVal Original_Id As Integer, ByVal Original_dni As String, ByVal Original_nombre As String, ByVal Original_apellidos As String, ByVal Original_estado As String, ByVal Original_fechaalta As Global.System.Nullable(Of Date), ByVal Original_fechabaja As Global.System.Nullable(Of Date), ByVal Original_email As String, ByVal Original_telefono As String) As Integer
+        Public Overloads Overridable Function Delete(ByVal Original_Id As Integer, ByVal Original_dni As String, ByVal Original_nombre As String, ByVal Original_apellidos As String, ByVal Original_estado As String, ByVal Original_fechaalta As Global.System.Nullable(Of Date), ByVal Original_fechabaja As Global.System.Nullable(Of Date), ByVal Original_email As String, ByVal Original_telefono As String, ByVal Original_asistencia As Global.System.Nullable(Of Integer)) As Integer
             Me.Adapter.DeleteCommand.Parameters(0).Value = CType(Original_Id,Integer)
             If (Original_dni Is Nothing) Then
                 Me.Adapter.DeleteCommand.Parameters(1).Value = CType(1,Object)
@@ -1380,6 +1391,13 @@ Namespace VarelaDataSetTableAdapters
                 Me.Adapter.DeleteCommand.Parameters(15).Value = CType(0,Object)
                 Me.Adapter.DeleteCommand.Parameters(16).Value = CType(Original_telefono,String)
             End If
+            If (Original_asistencia.HasValue = true) Then
+                Me.Adapter.DeleteCommand.Parameters(17).Value = CType(0,Object)
+                Me.Adapter.DeleteCommand.Parameters(18).Value = CType(Original_asistencia.Value,Integer)
+            Else
+                Me.Adapter.DeleteCommand.Parameters(17).Value = CType(1,Object)
+                Me.Adapter.DeleteCommand.Parameters(18).Value = Global.System.DBNull.Value
+            End If
             Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.DeleteCommand.Connection.State
             If ((Me.Adapter.DeleteCommand.Connection.State And Global.System.Data.ConnectionState.Open)  _
                         <> Global.System.Data.ConnectionState.Open) Then
@@ -1399,7 +1417,7 @@ Namespace VarelaDataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Insert, true)>  _
-        Public Overloads Overridable Function Insert(ByVal Id As Integer, ByVal dni As String, ByVal nombre As String, ByVal apellidos As String, ByVal estado As String, ByVal observaciones As String, ByVal fechaalta As Global.System.Nullable(Of Date), ByVal fechabaja As Global.System.Nullable(Of Date), ByVal email As String, ByVal telefono As String) As Integer
+        Public Overloads Overridable Function Insert(ByVal Id As Integer, ByVal dni As String, ByVal nombre As String, ByVal apellidos As String, ByVal estado As String, ByVal observaciones As String, ByVal fechaalta As Global.System.Nullable(Of Date), ByVal fechabaja As Global.System.Nullable(Of Date), ByVal email As String, ByVal telefono As String, ByVal asistencia As Global.System.Nullable(Of Integer)) As Integer
             Me.Adapter.InsertCommand.Parameters(0).Value = CType(Id,Integer)
             If (dni Is Nothing) Then
                 Me.Adapter.InsertCommand.Parameters(1).Value = Global.System.DBNull.Value
@@ -1446,6 +1464,11 @@ Namespace VarelaDataSetTableAdapters
             Else
                 Me.Adapter.InsertCommand.Parameters(9).Value = CType(telefono,String)
             End If
+            If (asistencia.HasValue = true) Then
+                Me.Adapter.InsertCommand.Parameters(10).Value = CType(asistencia.Value,Integer)
+            Else
+                Me.Adapter.InsertCommand.Parameters(10).Value = Global.System.DBNull.Value
+            End If
             Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.InsertCommand.Connection.State
             If ((Me.Adapter.InsertCommand.Connection.State And Global.System.Data.ConnectionState.Open)  _
                         <> Global.System.Data.ConnectionState.Open) Then
@@ -1476,6 +1499,7 @@ Namespace VarelaDataSetTableAdapters
                     ByVal fechabaja As Global.System.Nullable(Of Date),  _
                     ByVal email As String,  _
                     ByVal telefono As String,  _
+                    ByVal asistencia As Global.System.Nullable(Of Integer),  _
                     ByVal Original_Id As Integer,  _
                     ByVal Original_dni As String,  _
                     ByVal Original_nombre As String,  _
@@ -1484,7 +1508,8 @@ Namespace VarelaDataSetTableAdapters
                     ByVal Original_fechaalta As Global.System.Nullable(Of Date),  _
                     ByVal Original_fechabaja As Global.System.Nullable(Of Date),  _
                     ByVal Original_email As String,  _
-                    ByVal Original_telefono As String) As Integer
+                    ByVal Original_telefono As String,  _
+                    ByVal Original_asistencia As Global.System.Nullable(Of Integer)) As Integer
             Me.Adapter.UpdateCommand.Parameters(0).Value = CType(Id,Integer)
             If (dni Is Nothing) Then
                 Me.Adapter.UpdateCommand.Parameters(1).Value = Global.System.DBNull.Value
@@ -1531,62 +1556,74 @@ Namespace VarelaDataSetTableAdapters
             Else
                 Me.Adapter.UpdateCommand.Parameters(9).Value = CType(telefono,String)
             End If
-            Me.Adapter.UpdateCommand.Parameters(10).Value = CType(Original_Id,Integer)
-            If (Original_dni Is Nothing) Then
-                Me.Adapter.UpdateCommand.Parameters(11).Value = CType(1,Object)
-                Me.Adapter.UpdateCommand.Parameters(12).Value = Global.System.DBNull.Value
+            If (asistencia.HasValue = true) Then
+                Me.Adapter.UpdateCommand.Parameters(10).Value = CType(asistencia.Value,Integer)
             Else
-                Me.Adapter.UpdateCommand.Parameters(11).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(12).Value = CType(Original_dni,String)
+                Me.Adapter.UpdateCommand.Parameters(10).Value = Global.System.DBNull.Value
+            End If
+            Me.Adapter.UpdateCommand.Parameters(11).Value = CType(Original_Id,Integer)
+            If (Original_dni Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(12).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(13).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.UpdateCommand.Parameters(12).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(13).Value = CType(Original_dni,String)
             End If
             If (Original_nombre Is Nothing) Then
-                Me.Adapter.UpdateCommand.Parameters(13).Value = CType(1,Object)
-                Me.Adapter.UpdateCommand.Parameters(14).Value = Global.System.DBNull.Value
+                Me.Adapter.UpdateCommand.Parameters(14).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(15).Value = Global.System.DBNull.Value
             Else
-                Me.Adapter.UpdateCommand.Parameters(13).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(14).Value = CType(Original_nombre,String)
+                Me.Adapter.UpdateCommand.Parameters(14).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(15).Value = CType(Original_nombre,String)
             End If
             If (Original_apellidos Is Nothing) Then
-                Me.Adapter.UpdateCommand.Parameters(15).Value = CType(1,Object)
-                Me.Adapter.UpdateCommand.Parameters(16).Value = Global.System.DBNull.Value
+                Me.Adapter.UpdateCommand.Parameters(16).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(17).Value = Global.System.DBNull.Value
             Else
-                Me.Adapter.UpdateCommand.Parameters(15).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(16).Value = CType(Original_apellidos,String)
+                Me.Adapter.UpdateCommand.Parameters(16).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(17).Value = CType(Original_apellidos,String)
             End If
             If (Original_estado Is Nothing) Then
-                Me.Adapter.UpdateCommand.Parameters(17).Value = CType(1,Object)
-                Me.Adapter.UpdateCommand.Parameters(18).Value = Global.System.DBNull.Value
+                Me.Adapter.UpdateCommand.Parameters(18).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(19).Value = Global.System.DBNull.Value
             Else
-                Me.Adapter.UpdateCommand.Parameters(17).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(18).Value = CType(Original_estado,String)
+                Me.Adapter.UpdateCommand.Parameters(18).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(19).Value = CType(Original_estado,String)
             End If
             If (Original_fechaalta.HasValue = true) Then
-                Me.Adapter.UpdateCommand.Parameters(19).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(20).Value = CType(Original_fechaalta.Value,Date)
+                Me.Adapter.UpdateCommand.Parameters(20).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(21).Value = CType(Original_fechaalta.Value,Date)
             Else
-                Me.Adapter.UpdateCommand.Parameters(19).Value = CType(1,Object)
-                Me.Adapter.UpdateCommand.Parameters(20).Value = Global.System.DBNull.Value
+                Me.Adapter.UpdateCommand.Parameters(20).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(21).Value = Global.System.DBNull.Value
             End If
             If (Original_fechabaja.HasValue = true) Then
-                Me.Adapter.UpdateCommand.Parameters(21).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(22).Value = CType(Original_fechabaja.Value,Date)
+                Me.Adapter.UpdateCommand.Parameters(22).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(23).Value = CType(Original_fechabaja.Value,Date)
             Else
-                Me.Adapter.UpdateCommand.Parameters(21).Value = CType(1,Object)
-                Me.Adapter.UpdateCommand.Parameters(22).Value = Global.System.DBNull.Value
+                Me.Adapter.UpdateCommand.Parameters(22).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(23).Value = Global.System.DBNull.Value
             End If
             If (Original_email Is Nothing) Then
-                Me.Adapter.UpdateCommand.Parameters(23).Value = CType(1,Object)
-                Me.Adapter.UpdateCommand.Parameters(24).Value = Global.System.DBNull.Value
+                Me.Adapter.UpdateCommand.Parameters(24).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(25).Value = Global.System.DBNull.Value
             Else
-                Me.Adapter.UpdateCommand.Parameters(23).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(24).Value = CType(Original_email,String)
+                Me.Adapter.UpdateCommand.Parameters(24).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(25).Value = CType(Original_email,String)
             End If
             If (Original_telefono Is Nothing) Then
-                Me.Adapter.UpdateCommand.Parameters(25).Value = CType(1,Object)
-                Me.Adapter.UpdateCommand.Parameters(26).Value = Global.System.DBNull.Value
+                Me.Adapter.UpdateCommand.Parameters(26).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(27).Value = Global.System.DBNull.Value
             Else
-                Me.Adapter.UpdateCommand.Parameters(25).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(26).Value = CType(Original_telefono,String)
+                Me.Adapter.UpdateCommand.Parameters(26).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(27).Value = CType(Original_telefono,String)
+            End If
+            If (Original_asistencia.HasValue = true) Then
+                Me.Adapter.UpdateCommand.Parameters(28).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(29).Value = CType(Original_asistencia.Value,Integer)
+            Else
+                Me.Adapter.UpdateCommand.Parameters(28).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(29).Value = Global.System.DBNull.Value
             End If
             Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.UpdateCommand.Connection.State
             If ((Me.Adapter.UpdateCommand.Connection.State And Global.System.Data.ConnectionState.Open)  _
@@ -1617,6 +1654,7 @@ Namespace VarelaDataSetTableAdapters
                     ByVal fechabaja As Global.System.Nullable(Of Date),  _
                     ByVal email As String,  _
                     ByVal telefono As String,  _
+                    ByVal asistencia As Global.System.Nullable(Of Integer),  _
                     ByVal Original_Id As Integer,  _
                     ByVal Original_dni As String,  _
                     ByVal Original_nombre As String,  _
@@ -1625,8 +1663,9 @@ Namespace VarelaDataSetTableAdapters
                     ByVal Original_fechaalta As Global.System.Nullable(Of Date),  _
                     ByVal Original_fechabaja As Global.System.Nullable(Of Date),  _
                     ByVal Original_email As String,  _
-                    ByVal Original_telefono As String) As Integer
-            Return Me.Update(Original_Id, dni, nombre, apellidos, estado, observaciones, fechaalta, fechabaja, email, telefono, Original_Id, Original_dni, Original_nombre, Original_apellidos, Original_estado, Original_fechaalta, Original_fechabaja, Original_email, Original_telefono)
+                    ByVal Original_telefono As String,  _
+                    ByVal Original_asistencia As Global.System.Nullable(Of Integer)) As Integer
+            Return Me.Update(Original_Id, dni, nombre, apellidos, estado, observaciones, fechaalta, fechabaja, email, telefono, asistencia, Original_Id, Original_dni, Original_nombre, Original_apellidos, Original_estado, Original_fechaalta, Original_fechabaja, Original_email, Original_telefono, Original_asistencia)
         End Function
     End Class
     
@@ -1722,7 +1761,7 @@ Namespace VarelaDataSetTableAdapters
         '''</summary>
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Private Function UpdateUpdatedRows(ByVal dataSet As VarelaDataSet, ByVal allChangedRows As Global.System.Collections.Generic.List(Of Global.System.Data.DataRow), ByVal allAddedRows As Global.System.Collections.Generic.List(Of Global.System.Data.DataRow)) As Integer
+        Private Function UpdateUpdatedRows(ByVal dataSet As VarelaDataSet3, ByVal allChangedRows As Global.System.Collections.Generic.List(Of Global.System.Data.DataRow), ByVal allAddedRows As Global.System.Collections.Generic.List(Of Global.System.Data.DataRow)) As Integer
             Dim result As Integer = 0
             If (Not (Me._tableTableAdapter) Is Nothing) Then
                 Dim updatedRows() As Global.System.Data.DataRow = dataSet.Table.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.ModifiedCurrent)
@@ -1741,7 +1780,7 @@ Namespace VarelaDataSetTableAdapters
         '''</summary>
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Private Function UpdateInsertedRows(ByVal dataSet As VarelaDataSet, ByVal allAddedRows As Global.System.Collections.Generic.List(Of Global.System.Data.DataRow)) As Integer
+        Private Function UpdateInsertedRows(ByVal dataSet As VarelaDataSet3, ByVal allAddedRows As Global.System.Collections.Generic.List(Of Global.System.Data.DataRow)) As Integer
             Dim result As Integer = 0
             If (Not (Me._tableTableAdapter) Is Nothing) Then
                 Dim addedRows() As Global.System.Data.DataRow = dataSet.Table.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.Added)
@@ -1759,7 +1798,7 @@ Namespace VarelaDataSetTableAdapters
         '''</summary>
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Private Function UpdateDeletedRows(ByVal dataSet As VarelaDataSet, ByVal allChangedRows As Global.System.Collections.Generic.List(Of Global.System.Data.DataRow)) As Integer
+        Private Function UpdateDeletedRows(ByVal dataSet As VarelaDataSet3, ByVal allChangedRows As Global.System.Collections.Generic.List(Of Global.System.Data.DataRow)) As Integer
             Dim result As Integer = 0
             If (Not (Me._tableTableAdapter) Is Nothing) Then
                 Dim deletedRows() As Global.System.Data.DataRow = dataSet.Table.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.Deleted)
@@ -1803,7 +1842,7 @@ Namespace VarelaDataSetTableAdapters
         '''</summary>
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Overridable Function UpdateAll(ByVal dataSet As VarelaDataSet) As Integer
+        Public Overridable Function UpdateAll(ByVal dataSet As VarelaDataSet3) As Integer
             If (dataSet Is Nothing) Then
                 Throw New Global.System.ArgumentNullException("dataSet")
             End If
