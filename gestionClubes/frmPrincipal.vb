@@ -59,17 +59,7 @@
 
     End Sub
 
-    Private Sub AsambleasToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AsambleasToolStripMenuItem.Click
-        Dim frmNuevaAsamblea As frmNuevaAsamblea
-        frmNuevaAsamblea = New frmNuevaAsamblea
-        frmNuevaAsamblea.Show()
-    End Sub
 
-    Private Sub ListadoDeAsistenciaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ListadoDeAsistenciaToolStripMenuItem.Click
-        Dim frmListadoAsistencia As frmListadoAsistencia
-        frmListadoAsistencia = New frmListadoAsistencia
-        frmListadoAsistencia.Show()
-    End Sub
 
     Private Sub NuevoProToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles NuevoProToolStripMenuItem.Click
         Dim frmNuevoProveedor As frmNuevoProveedor
@@ -78,6 +68,20 @@
     End Sub
 
     Private Sub btnFaturación_Click(sender As Object, e As EventArgs) Handles btnFaturación.Click
+        Dim frmNuevaFactura As frmNuevaFactura
+        frmNuevaFactura = New frmNuevaFactura
+        frmNuevaFactura.Show()
+    End Sub
 
+    Private Sub ListadoAsistenciaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ListadoAsistenciaToolStripMenuItem.Click
+        Dim frmListadoAsistencia As frmListadoAsistencia
+        frmListadoAsistencia = New frmListadoAsistencia
+        frmListadoAsistencia.Show()
+    End Sub
+
+    Private Sub ListadoAsambleaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ListadoAsambleaToolStripMenuItem.Click
+        Dim frmNuevaAsamblea As frmNuevaAsamblea
+        frmNuevaAsamblea = New frmNuevaAsamblea
+        frmNuevaAsamblea.Show()
     End Sub
 End Class
