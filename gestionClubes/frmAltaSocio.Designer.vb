@@ -23,9 +23,9 @@ Partial Class frmAltaSocio
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle10 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle11 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle12 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
@@ -41,7 +41,6 @@ Partial Class frmAltaSocio
         Me.MetroLabel10 = New MetroFramework.Controls.MetroLabel()
         Me.MetroLabel9 = New MetroFramework.Controls.MetroLabel()
         Me.MetroLabel8 = New MetroFramework.Controls.MetroLabel()
-        Me.dtpFehaAlta = New System.Windows.Forms.DateTimePicker()
         Me.MetroTextBox1 = New MetroFramework.Controls.MetroTextBox()
         Me.MetroButton1 = New MetroFramework.Controls.MetroButton()
         Me.MetroLabel1 = New MetroFramework.Controls.MetroLabel()
@@ -68,7 +67,6 @@ Partial Class frmAltaSocio
         Me.MetroComboBox1 = New MetroFramework.Controls.MetroComboBox()
         Me.MetroComboBox2 = New MetroFramework.Controls.MetroComboBox()
         Me.MetroDateTime1 = New MetroFramework.Controls.MetroDateTime()
-        Me.MetroComboBox3 = New MetroFramework.Controls.MetroComboBox()
         Me.MetroGrid1 = New MetroFramework.Controls.MetroGrid()
         Me.asdasd = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.a = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -359,14 +357,6 @@ Partial Class frmAltaSocio
         Me.MetroLabel8.Size = New System.Drawing.Size(41, 19)
         Me.MetroLabel8.TabIndex = 72
         Me.MetroLabel8.Text = "Callle"
-        '
-        'dtpFehaAlta
-        '
-        Me.dtpFehaAlta.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.dtpFehaAlta.Location = New System.Drawing.Point(628, 92)
-        Me.dtpFehaAlta.Name = "dtpFehaAlta"
-        Me.dtpFehaAlta.Size = New System.Drawing.Size(121, 20)
-        Me.dtpFehaAlta.TabIndex = 45
         '
         'MetroTextBox1
         '
@@ -769,22 +759,11 @@ Partial Class frmAltaSocio
         '
         'MetroDateTime1
         '
-        Me.MetroDateTime1.Location = New System.Drawing.Point(549, 50)
+        Me.MetroDateTime1.Location = New System.Drawing.Point(628, 82)
         Me.MetroDateTime1.MinimumSize = New System.Drawing.Size(0, 29)
         Me.MetroDateTime1.Name = "MetroDateTime1"
-        Me.MetroDateTime1.Size = New System.Drawing.Size(200, 29)
+        Me.MetroDateTime1.Size = New System.Drawing.Size(121, 29)
         Me.MetroDateTime1.TabIndex = 91
-        '
-        'MetroComboBox3
-        '
-        Me.MetroComboBox3.FormattingEnabled = True
-        Me.MetroComboBox3.ItemHeight = 23
-        Me.MetroComboBox3.Items.AddRange(New Object() {"ddsdsa", "asd", "da", "sadsa"})
-        Me.MetroComboBox3.Location = New System.Drawing.Point(364, 27)
-        Me.MetroComboBox3.Name = "MetroComboBox3"
-        Me.MetroComboBox3.Size = New System.Drawing.Size(121, 29)
-        Me.MetroComboBox3.TabIndex = 92
-        Me.MetroComboBox3.UseSelectable = True
         '
         'MetroGrid1
         '
@@ -794,38 +773,38 @@ Partial Class frmAltaSocio
         Me.MetroGrid1.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.MetroGrid1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None
         Me.MetroGrid1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(219, Byte), Integer))
-        DataGridViewCellStyle10.Font = New System.Drawing.Font("Segoe UI", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
-        DataGridViewCellStyle10.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(247, Byte), Integer))
-        DataGridViewCellStyle10.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(17, Byte), Integer), CType(CType(17, Byte), Integer), CType(CType(17, Byte), Integer))
-        DataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.MetroGrid1.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle10
+        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(219, Byte), Integer))
+        DataGridViewCellStyle1.Font = New System.Drawing.Font("Segoe UI", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
+        DataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(247, Byte), Integer))
+        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(17, Byte), Integer), CType(CType(17, Byte), Integer), CType(CType(17, Byte), Integer))
+        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.MetroGrid1.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
         Me.MetroGrid1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.MetroGrid1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.asdasd, Me.a, Me.Column1, Me.Column2, Me.Column3, Me.Column4, Me.Column5, Me.Column6})
-        DataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle11.Font = New System.Drawing.Font("Segoe UI", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
-        DataGridViewCellStyle11.ForeColor = System.Drawing.Color.FromArgb(CType(CType(136, Byte), Integer), CType(CType(136, Byte), Integer), CType(CType(136, Byte), Integer))
-        DataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(247, Byte), Integer))
-        DataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(17, Byte), Integer), CType(CType(17, Byte), Integer), CType(CType(17, Byte), Integer))
-        DataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.MetroGrid1.DefaultCellStyle = DataGridViewCellStyle11
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Segoe UI", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
+        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(136, Byte), Integer), CType(CType(136, Byte), Integer), CType(CType(136, Byte), Integer))
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(247, Byte), Integer))
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(17, Byte), Integer), CType(CType(17, Byte), Integer), CType(CType(17, Byte), Integer))
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.MetroGrid1.DefaultCellStyle = DataGridViewCellStyle2
         Me.MetroGrid1.EnableHeadersVisualStyles = False
         Me.MetroGrid1.Font = New System.Drawing.Font("Segoe UI", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
         Me.MetroGrid1.GridColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.MetroGrid1.Location = New System.Drawing.Point(48, 605)
         Me.MetroGrid1.Name = "MetroGrid1"
         Me.MetroGrid1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle12.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(219, Byte), Integer))
-        DataGridViewCellStyle12.Font = New System.Drawing.Font("Segoe UI", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
-        DataGridViewCellStyle12.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(247, Byte), Integer))
-        DataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(17, Byte), Integer), CType(CType(17, Byte), Integer), CType(CType(17, Byte), Integer))
-        DataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.MetroGrid1.RowHeadersDefaultCellStyle = DataGridViewCellStyle12
+        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(219, Byte), Integer))
+        DataGridViewCellStyle3.Font = New System.Drawing.Font("Segoe UI", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
+        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(247, Byte), Integer))
+        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(17, Byte), Integer), CType(CType(17, Byte), Integer), CType(CType(17, Byte), Integer))
+        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.MetroGrid1.RowHeadersDefaultCellStyle = DataGridViewCellStyle3
         Me.MetroGrid1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing
         Me.MetroGrid1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.MetroGrid1.Size = New System.Drawing.Size(1177, 150)
@@ -878,7 +857,6 @@ Partial Class frmAltaSocio
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.ClientSize = New System.Drawing.Size(1350, 706)
         Me.Controls.Add(Me.MetroGrid1)
-        Me.Controls.Add(Me.MetroComboBox3)
         Me.Controls.Add(Me.MetroDateTime1)
         Me.Controls.Add(Me.MetroComboBox2)
         Me.Controls.Add(Me.MetroComboBox1)
@@ -905,7 +883,6 @@ Partial Class frmAltaSocio
         Me.Controls.Add(Me.MetroLabel1)
         Me.Controls.Add(Me.MetroButton1)
         Me.Controls.Add(Me.MetroTextBox1)
-        Me.Controls.Add(Me.dtpFehaAlta)
         Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.GroupBox1)
@@ -923,7 +900,6 @@ Partial Class frmAltaSocio
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents GroupBox1 As GroupBox
-    Friend WithEvents dtpFehaAlta As DateTimePicker
     Friend WithEvents MetroTextBox1 As MetroFramework.Controls.MetroTextBox
     Friend WithEvents MetroButton1 As MetroFramework.Controls.MetroButton
     Friend WithEvents MetroLabel1 As MetroFramework.Controls.MetroLabel
@@ -962,7 +938,6 @@ Partial Class frmAltaSocio
     Friend WithEvents MetroComboBox1 As MetroFramework.Controls.MetroComboBox
     Friend WithEvents MetroComboBox2 As MetroFramework.Controls.MetroComboBox
     Friend WithEvents MetroDateTime1 As MetroFramework.Controls.MetroDateTime
-    Friend WithEvents MetroComboBox3 As MetroFramework.Controls.MetroComboBox
     Friend WithEvents MetroGrid1 As MetroFramework.Controls.MetroGrid
     Friend WithEvents asdasd As DataGridViewTextBoxColumn
     Friend WithEvents a As DataGridViewTextBoxColumn

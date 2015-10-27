@@ -54,4 +54,26 @@
         frmCarnet = New frmCarnet
         frmCarnet.Show()
     End Sub
+
+    Private Sub ImportarSociosToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ImportarSociosToolStripMenuItem.Click
+
+    End Sub
+
+    Private Sub AsambleasToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AsambleasToolStripMenuItem.Click
+        Dim frmNuevaAsamblea As frmNuevaAsamblea
+        frmNuevaAsamblea = New frmNuevaAsamblea
+        frmNuevaAsamblea.Show()
+    End Sub
+
+    Private Sub ListadoDeAsistenciaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ListadoDeAsistenciaToolStripMenuItem.Click
+        Dim frmListadoAsistencia As frmListadoAsistencia
+        frmListadoAsistencia = New frmListadoAsistencia
+        frmListadoAsistencia.Show()
+    End Sub
+
+    Private Sub NuevoProToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles NuevoProToolStripMenuItem.Click
+        Dim frmNuevoProveedor As frmNuevoProveedor
+        frmNuevoProveedor = New frmNuevoProveedor
+        frmNuevoProveedor.Show()
+    End Sub
 End Class
