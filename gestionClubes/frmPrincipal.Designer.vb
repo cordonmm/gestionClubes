@@ -1,4 +1,4 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class frmPrincipal
     Inherits MetroFramework.Forms.MetroForm
 
@@ -7,7 +7,7 @@ Partial Class frmPrincipal
 
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -24,7 +24,7 @@ Partial Class frmPrincipal
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
@@ -54,6 +54,8 @@ Partial Class frmPrincipal
         Me.btnFaturación = New MetroFramework.Controls.MetroButton()
         Me.btnSacarEntrada = New MetroFramework.Controls.MetroButton()
         Me.btnSocios = New MetroFramework.Controls.MetroButton()
+        Me.ListadoFacturaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ListadoProveedoresToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -153,7 +155,7 @@ Partial Class frmPrincipal
         '
         'ContabilidadToolStripMenuItem
         '
-        Me.ContabilidadToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NuevaFacturaToolStripMenuItem, Me.NuevoProToolStripMenuItem})
+        Me.ContabilidadToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NuevaFacturaToolStripMenuItem, Me.NuevoProToolStripMenuItem, Me.ListadoFacturaToolStripMenuItem, Me.ListadoProveedoresToolStripMenuItem})
         Me.ContabilidadToolStripMenuItem.Name = "ContabilidadToolStripMenuItem"
         Me.ContabilidadToolStripMenuItem.Size = New System.Drawing.Size(87, 20)
         Me.ContabilidadToolStripMenuItem.Text = "Contabilidad"
@@ -161,13 +163,13 @@ Partial Class frmPrincipal
         'NuevaFacturaToolStripMenuItem
         '
         Me.NuevaFacturaToolStripMenuItem.Name = "NuevaFacturaToolStripMenuItem"
-        Me.NuevaFacturaToolStripMenuItem.Size = New System.Drawing.Size(166, 22)
+        Me.NuevaFacturaToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.NuevaFacturaToolStripMenuItem.Text = "Nueva Factura"
         '
         'NuevoProToolStripMenuItem
         '
         Me.NuevoProToolStripMenuItem.Name = "NuevoProToolStripMenuItem"
-        Me.NuevoProToolStripMenuItem.Size = New System.Drawing.Size(166, 22)
+        Me.NuevoProToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.NuevoProToolStripMenuItem.Text = "Nuevo Proveedor"
         '
         'ConfiguraciónToolStripMenuItem
@@ -257,6 +259,18 @@ Partial Class frmPrincipal
         Me.btnSocios.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         Me.btnSocios.UseSelectable = True
         '
+        'ListadoFacturaToolStripMenuItem
+        '
+        Me.ListadoFacturaToolStripMenuItem.Name = "ListadoFacturaToolStripMenuItem"
+        Me.ListadoFacturaToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.ListadoFacturaToolStripMenuItem.Text = "Listado Factura"
+        '
+        'ListadoProveedoresToolStripMenuItem
+        '
+        Me.ListadoProveedoresToolStripMenuItem.Name = "ListadoProveedoresToolStripMenuItem"
+        Me.ListadoProveedoresToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.ListadoProveedoresToolStripMenuItem.Text = "Listado Proveedores"
+        '
         'frmPrincipal
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -304,6 +318,4 @@ Partial Class frmPrincipal
     Friend WithEvents MetroButton1 As MetroFramework.Controls.MetroButton
     Friend WithEvents MetroButton2 As MetroFramework.Controls.MetroButton
     Friend WithEvents SociosToolStripMenuItem1 As ToolStripMenuItem
-    Friend WithEvents AsambleasToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents ListadoDeAsistenciaToolStripMenuItem As ToolStripMenuItem
 End Class
