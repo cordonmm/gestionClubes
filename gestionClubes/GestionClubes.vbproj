@@ -138,6 +138,30 @@
     <Compile Include="frmCuotas.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmListadoAsistencia.Designer.vb">
+      <DependentUpon>frmListadoAsistencia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmListadoAsistencia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNuevaAsamblea.Designer.vb">
+      <DependentUpon>frmNuevaAsamblea.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmNuevaAsamblea.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNuevoProveedor.Designer.vb">
+      <DependentUpon>frmNuevoProveedor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmNuevoProveedor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPDFAsamblea.Designer.vb">
+      <DependentUpon>frmPDFAsamblea.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPDFAsamblea.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmPrincipal.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -177,6 +201,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>VarelaDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="VarelaDataSet11.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VarelaDataSet11.xsd</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="frmCarnet.resx">
@@ -184,6 +213,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmCuotas.resx">
       <DependentUpon>frmCuotas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListadoAsistencia.resx">
+      <DependentUpon>frmListadoAsistencia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNuevaAsamblea.resx">
+      <DependentUpon>frmNuevaAsamblea.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNuevoProveedor.resx">
+      <DependentUpon>frmNuevoProveedor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPDFAsamblea.resx">
+      <DependentUpon>frmPDFAsamblea.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmPrincipal.resx">
       <DependentUpon>frmPrincipal.vb</DependentUpon>
@@ -223,6 +264,17 @@
     </None>
     <None Include="VarelaDataSet.xss">
       <DependentUpon>VarelaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="VarelaDataSet11.xsc">
+      <DependentUpon>VarelaDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="VarelaDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>VarelaDataSet11.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="VarelaDataSet11.xss">
+      <DependentUpon>VarelaDataSet11.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>
