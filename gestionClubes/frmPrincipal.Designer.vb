@@ -32,6 +32,7 @@ Partial Class frmPrincipal
         Me.ListadoUsuariosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.PermisosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SociosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.SociosToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.BeneficiariosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.BonosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ListadoDeSociosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -45,13 +46,14 @@ Partial Class frmPrincipal
         Me.ConfiguraciónToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MetroStyleExtender1 = New MetroFramework.Components.MetroStyleExtender(Me.components)
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
-        Me.SociosToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.MetroButton2 = New MetroFramework.Controls.MetroButton()
         Me.MetroButton1 = New MetroFramework.Controls.MetroButton()
         Me.btnPuerta = New MetroFramework.Controls.MetroButton()
         Me.btnFaturación = New MetroFramework.Controls.MetroButton()
         Me.btnSacarEntrada = New MetroFramework.Controls.MetroButton()
         Me.btnSocios = New MetroFramework.Controls.MetroButton()
+        Me.ListadoFacturaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ListadoProveedoresToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -89,6 +91,12 @@ Partial Class frmPrincipal
         Me.SociosToolStripMenuItem.Name = "SociosToolStripMenuItem"
         Me.SociosToolStripMenuItem.Size = New System.Drawing.Size(53, 20)
         Me.SociosToolStripMenuItem.Text = "Socios"
+        '
+        'SociosToolStripMenuItem1
+        '
+        Me.SociosToolStripMenuItem1.Name = "SociosToolStripMenuItem1"
+        Me.SociosToolStripMenuItem1.Size = New System.Drawing.Size(184, 22)
+        Me.SociosToolStripMenuItem1.Text = "Nuevo"
         '
         'BeneficiariosToolStripMenuItem
         '
@@ -133,7 +141,7 @@ Partial Class frmPrincipal
         '
         'ContabilidadToolStripMenuItem
         '
-        Me.ContabilidadToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NuevaFacturaToolStripMenuItem, Me.NuevoProToolStripMenuItem})
+        Me.ContabilidadToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NuevaFacturaToolStripMenuItem, Me.NuevoProToolStripMenuItem, Me.ListadoFacturaToolStripMenuItem, Me.ListadoProveedoresToolStripMenuItem})
         Me.ContabilidadToolStripMenuItem.Name = "ContabilidadToolStripMenuItem"
         Me.ContabilidadToolStripMenuItem.Size = New System.Drawing.Size(87, 20)
         Me.ContabilidadToolStripMenuItem.Text = "Contabilidad"
@@ -141,13 +149,13 @@ Partial Class frmPrincipal
         'NuevaFacturaToolStripMenuItem
         '
         Me.NuevaFacturaToolStripMenuItem.Name = "NuevaFacturaToolStripMenuItem"
-        Me.NuevaFacturaToolStripMenuItem.Size = New System.Drawing.Size(166, 22)
+        Me.NuevaFacturaToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.NuevaFacturaToolStripMenuItem.Text = "Nueva Factura"
         '
         'NuevoProToolStripMenuItem
         '
         Me.NuevoProToolStripMenuItem.Name = "NuevoProToolStripMenuItem"
-        Me.NuevoProToolStripMenuItem.Size = New System.Drawing.Size(166, 22)
+        Me.NuevoProToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.NuevoProToolStripMenuItem.Text = "Nuevo Proveedor"
         '
         'ConfiguraciónToolStripMenuItem
@@ -155,12 +163,6 @@ Partial Class frmPrincipal
         Me.ConfiguraciónToolStripMenuItem.Name = "ConfiguraciónToolStripMenuItem"
         Me.ConfiguraciónToolStripMenuItem.Size = New System.Drawing.Size(95, 20)
         Me.ConfiguraciónToolStripMenuItem.Text = "Configuración"
-        '
-        'SociosToolStripMenuItem1
-        '
-        Me.SociosToolStripMenuItem1.Name = "SociosToolStripMenuItem1"
-        Me.SociosToolStripMenuItem1.Size = New System.Drawing.Size(184, 22)
-        Me.SociosToolStripMenuItem1.Text = "Nuevo"
         '
         'MetroButton2
         '
@@ -243,6 +245,18 @@ Partial Class frmPrincipal
         Me.btnSocios.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         Me.btnSocios.UseSelectable = True
         '
+        'ListadoFacturaToolStripMenuItem
+        '
+        Me.ListadoFacturaToolStripMenuItem.Name = "ListadoFacturaToolStripMenuItem"
+        Me.ListadoFacturaToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.ListadoFacturaToolStripMenuItem.Text = "Listado Factura"
+        '
+        'ListadoProveedoresToolStripMenuItem
+        '
+        Me.ListadoProveedoresToolStripMenuItem.Name = "ListadoProveedoresToolStripMenuItem"
+        Me.ListadoProveedoresToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.ListadoProveedoresToolStripMenuItem.Text = "Listado Proveedores"
+        '
         'frmPrincipal
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -290,4 +304,6 @@ Partial Class frmPrincipal
     Friend WithEvents MetroButton1 As MetroFramework.Controls.MetroButton
     Friend WithEvents MetroButton2 As MetroFramework.Controls.MetroButton
     Friend WithEvents SociosToolStripMenuItem1 As ToolStripMenuItem
+    Friend WithEvents ListadoFacturaToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ListadoProveedoresToolStripMenuItem As ToolStripMenuItem
 End Class

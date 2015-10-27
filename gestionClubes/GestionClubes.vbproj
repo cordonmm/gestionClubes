@@ -126,6 +126,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmNuevaFactura.Designer.vb">
+      <DependentUpon>frmNuevaFactura.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmNuevaFactura.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmCarnet.Designer.vb">
       <DependentUpon>frmCarnet.vb</DependentUpon>
     </Compile>
@@ -184,6 +190,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmCuotas.resx">
       <DependentUpon>frmCuotas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNuevaFactura.resx">
+      <DependentUpon>frmNuevaFactura.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmPrincipal.resx">
       <DependentUpon>frmPrincipal.vb</DependentUpon>
@@ -280,6 +289,7 @@
     <None Include="Resources\Google+ alt 2.png" />
     <None Include="Resources\lupa-psd-468x468.png" />
     <None Include="Resources\Sin_imagen.png" />
+    <None Include="Resources\add.png" />
     <Content Include="Scripts\jquery-1.6.4-vsdoc.js" />
     <Content Include="Scripts\jquery-1.6.4.js" />
     <Content Include="Scripts\jquery-1.6.4.min.js" />
