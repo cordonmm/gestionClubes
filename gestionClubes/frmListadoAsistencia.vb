@@ -1,7 +1,8 @@
 ﻿Public Class frmListadoAsistencia
     Private Sub frmListadoAsistencia_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        'TODO: esta línea de código carga datos en la tabla 'VarelaDataSet3.Table' Puede moverla o quitarla según sea necesario.
-        Me.TableTableAdapter.Fill(Me.VarelaDataSet3.Table)
+        'TODO: esta línea de código carga datos en la tabla 'VarelaDataSet1.Table' Puede moverla o quitarla según sea necesario.
+        Me.TableTableAdapter.Fill(Me.VarelaDataSet1.Table)
+
 
     End Sub
 
